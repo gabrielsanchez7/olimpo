@@ -1,0 +1,27 @@
+:root {
+  --green: #096045;
+  --yellow: #f8f538;
+  --text: #042;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1680px;
+  margin: auto;
+  padding: 0 100px;
+}
+@media screen and (max-width: 1350px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

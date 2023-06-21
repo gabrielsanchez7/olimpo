@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--green);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 135px;
+}
+
+/*# sourceMappingURL=layout.css.map */
