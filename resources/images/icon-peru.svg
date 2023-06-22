@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_80);
+      }
+
+      .cls-4, .cls-5 {
+        mix-blend-mode: multiply;
+        opacity: .64;
+      }
+
+      .cls-6 {
+        fill: url(#Degradado_sin_nombre_58-2);
+      }
+
+      .cls-6, .cls-7 {
+        opacity: .9;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-9 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_80-2);
+      }
+
+      .cls-7 {
+        fill: url(#Degradado_sin_nombre_58);
+      }
+
+      .cls-10 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-11 {
+        fill: url(#Degradado_sin_nombre_79);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-13 {
+        fill: #ff1612;
+      }
+
+      .cls-13, .cls-14 {
+        fill-rule: evenodd;
+      }
+
+      .cls-15 {
+        fill: #3cc666;
+      }
+
+      .cls-16 {
+        fill: none;
+      }
+
+      .cls-17 {
+        fill: url(#Degradado_sin_nombre_79-2);
+      }
+
+      .cls-18 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-19 {
+        mask: url(#mask-1);
+      }
+
+      .cls-14 {
+        fill: #f0f0f0;
+      }
+
+      .cls-20 {
+        clip-path: url(#clippath-1);
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-16" cx="-31.3" cy="23.98" r="24"/>
+    </clipPath>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-1">
+      <circle class="cls-16" cx="-31.3" cy="23.98" r="20"/>
+    </clipPath>
+    <radialGradient id="Degradado_sin_nombre_80" data-name="Degradado sin nombre 80" cx="-138.27" cy="14.59" fx="-138.27" fy="14.59" r="52.09" gradientTransform="translate(81.65 94.47) rotate(48.3)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".51" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".88" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="Degradado_sin_nombre_79" data-name="Degradado sin nombre 79" x1="-57.41" y1="61.51" x2="-22.69" y2="4.29" gradientTransform="translate(7.44 40.99) rotate(53.42)" gradientUnits="userSpaceOnUse">
+      <stop offset=".36" stop-color="#000"/>
+      <stop offset=".49" stop-color="#020202"/>
+      <stop offset=".58" stop-color="#0a0a0a"/>
+      <stop offset=".64" stop-color="#191919"/>
+      <stop offset=".7" stop-color="#2d2d2d"/>
+      <stop offset=".76" stop-color="#474747"/>
+      <stop offset=".81" stop-color="#676767"/>
+      <stop offset=".85" stop-color="#8e8e8e"/>
+      <stop offset=".9" stop-color="#bababa"/>
+      <stop offset=".94" stop-color="#ebebeb"/>
+      <stop offset=".96" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="mask" x="-74.88" y="-9.83" width="75.86" height="75.43" maskUnits="userSpaceOnUse">
+      <ellipse class="cls-11" cx="-37.01" cy="27.89" rx="37.53" ry="38.05" transform="translate(-37.35 -18.45) rotate(-53.42)"/>
+    </mask>
+    <radialGradient id="Degradado_sin_nombre_58" data-name="Degradado sin nombre 58" cx="-51.63" cy="21.33" fx="-51.63" fy="21.33" r="32.28" gradientTransform="translate(-27.36 -25.7) rotate(-63.51)" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".15" stop-color="#fff" stop-opacity=".02"/>
+      <stop offset=".24" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset=".33" stop-color="#fff" stop-opacity=".14"/>
+      <stop offset=".41" stop-color="#fff" stop-opacity=".24"/>
+      <stop offset=".49" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".58" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".66" stop-color="#fff" stop-opacity=".75"/>
+      <stop offset=".74" stop-color="#fff" stop-opacity=".98"/>
+      <stop offset=".75" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+    <clipPath id="clippath-2">
+      <circle class="cls-16" cx="24" cy="24" r="24"/>
+    </clipPath>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="3"/>
+      <feFlood flood-color="#000" flood-opacity=".5"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-3">
+      <path class="cls-16" d="M43.98,24c0,11.04-8.95,19.98-19.98,19.98S4.02,35.04,4.02,24,12.96,4.02,24,4.02s19.98,8.95,19.98,19.98Z"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <circle class="cls-16" cx="24" cy="24" r="20"/>
+    </clipPath>
+    <radialGradient id="Degradado_sin_nombre_80-2" data-name="Degradado sin nombre 80" cx="-101.46" cy="-26.69" fx="-101.46" fy="-26.69" r="52.09" xlink:href="#Degradado_sin_nombre_80"/>
+    <linearGradient id="Degradado_sin_nombre_79-2" data-name="Degradado sin nombre 79" x1="-2.11" y1="61.53" x2="32.61" y2="4.31" gradientTransform="translate(29.8 -3.41) rotate(53.42)" xlink:href="#Degradado_sin_nombre_79"/>
+    <mask id="mask-1" x="-19.58" y="-9.8" width="75.86" height="75.43" maskUnits="userSpaceOnUse">
+      <ellipse class="cls-17" cx="18.29" cy="27.91" rx="37.53" ry="38.05" transform="translate(-15.02 25.97) rotate(-53.42)"/>
+    </mask>
+    <radialGradient id="Degradado_sin_nombre_58-2" data-name="Degradado sin nombre 58" cx="-26.97" cy="70.83" fx="-26.97" fy="70.83" xlink:href="#Degradado_sin_nombre_58"/>
+  </defs>
+  <g class="cls-9">
+    <g id="Capa_3" data-name="Capa 3"/>
+    <g id="Capa_1_copia" data-name="Capa 1 copia"/>
+    <g id="bandera_ecuador" data-name="bandera ecuador">
+      <g class="cls-12">
+        <g class="cls-10">
+          <g class="cls-20">
+            <circle class="cls-4" cx="-21.23" cy=".94" r="52.09"/>
+            <g class="cls-2">
+              <circle class="cls-7" cx="-31.3" cy="30.02" r="32.28"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="bandera_perú" data-name="bandera perú">
+      <g class="cls-3">
+        <path class="cls-15" d="M24,4.02c11.04,0,19.98,8.95,19.98,19.98s-8.95,19.98-19.98,19.98S4.02,35.04,4.02,24,12.96,4.02,24,4.02M24,.02C10.78,.02,.02,10.78,.02,24s10.76,23.98,23.98,23.98,23.98-10.76,23.98-23.98S37.22,.02,24,.02h0Z"/>
+        <g class="cls-18">
+          <g class="cls-1">
+            <g>
+              <path class="cls-13" d="M2.71,43.98h14.15V4.02H2.71V43.98h0Zm28.3,0h14.15V4.02h-14.15V43.98h0Z"/>
+              <polygon class="cls-14" points="16.86 43.98 31.01 43.98 31.01 4.02 16.86 4.02 16.86 43.98 16.86 43.98"/>
+            </g>
+          </g>
+          <circle class="cls-16" cx="24" cy="24" r="19.98"/>
+          <g class="cls-8">
+            <circle class="cls-5" cx="34.08" cy=".96" r="52.09"/>
+            <g class="cls-19">
+              <circle class="cls-6" cx="24" cy="30.04" r="32.28"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

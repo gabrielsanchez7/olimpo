@@ -1,20 +1,22 @@
 :root {
-  --green: #096045;
+  --font: "GT Walsheim Pro";
+  --green-1: #096045;
+  --green-2: #004422;
+  --green-3: #00D645;
   --yellow: #f8f538;
-  --text: #042;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin: auto;
+  font-family: var(--font);
 }
 
 .container {
   display: block;
   width: 100%;
-  max-width: 1680px;
+  max-width: 100%;
   margin: auto;
   padding: 0 100px;
 }
@@ -22,6 +24,44 @@
   .container {
     padding: 0 20px;
   }
+}
+
+.button {
+  display: inline-block;
+  padding: 11px;
+  border-radius: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media screen and (max-width: 450px) {
+  .button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  appearance: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.button:active, button:active, a:active {
+  transform: translateY(1px);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=global.css.map */
