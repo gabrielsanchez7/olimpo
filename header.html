@@ -2,17 +2,27 @@
   <div class="header__container container-layout">
     <a href="./index.html"><img class="header__logo" src="./resources/images/logo-olimpo.svg" alt="Olimpo"></a>
     <div class="header__menu">
-      <a class="header__menu-item" data-menu="index" href="./index.html">Inicio</a>
       <a class="header__menu-item" data-menu="bonus" href="./bonus.html">Bonos</a>
       <a class="header__menu-item" data-menu="products" href="./products.html">Productos</a>
       <a class="header__menu-item" data-menu="experiences" href="./experiences.html">Experiencias</a>
       <a class="header__menu-item" data-menu="travel" href="./travel.html">Viajes</a>
-      <a class="header__menu-item" data-menu="profile" href="./profile.html">Perfil</a>
     </div>
     <div class="header__user">
-      <button type="button"><img class="header__country" src="./resources/images/icon-peru.svg" alt="Per&uacute;"></button>
-      <a class="header__signin button" href="javascript:void(0)">Reg&iacute;strate</a>
-      <a class="header__login button" href="javascript:void(0)">Ingresa</a>
+      <div class="header__search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Buscar">
+      </div>
+      <div class="header__profile">
+        <a href="./profile.html"><img src="./resources/images/user-rtb.svg" alt="User"></a>
+        <div class="header__user-data">
+          <p class="header__greeting">Hola</p>
+          <p class="header__name">gasanv</p>
+        </div>
+      </div>
+      <div class="header__libs">
+        <img src="./resources/images/coin.svg" alt="Libras">
+        <span>60,000</span>
+      </div>
     </div>
   </div>
 

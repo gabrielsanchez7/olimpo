@@ -37,10 +37,77 @@
     
   }
 
+  &__search {
+    position: relative;
+
+    i {
+      position: absolute;
+      left: 15px;
+      font-size: 18px;
+      color: var(--gray-1);
+      top: calc(50% - 9px);
+    }
+
+    input {
+      background-color: transparent;
+      appearance: none;
+      outline: none;
+      border-radius: 20px;
+      border: 1px solid var(--gray-1);
+      line-height: 30px;
+      padding-left: 40px;
+      color: white;
+
+      &::placeholder {
+        color: var(--gray-1);
+      }
+    }
+    
+  }
+  
   &__user {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding-right: 20px;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__greeting {
+    font-size: 12px;
+    color: var(--gray-1);
+    margin: 0;
+  }
+
+  &__name {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--yellow);
+    margin: 0;
+    line-height: 14px;
+  }
+
+  &__libs {
+    background-color: var(--yellow);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+
+    img { width: 30px; }
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--green-1);
+    }
+    
   }
 
   &__country {
