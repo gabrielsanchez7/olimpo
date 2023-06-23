@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Olimpo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Olimpo</title>
 	<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./styles/main.css">
+
+	<link rel="stylesheet" type="text/css" href="./styles/owl.carousel.css">
+	
 	<script src="./scripts/load-scripts.js"></script>
 </head>
+
 <body>
 
 	<header></header>
 
 	<main>
-		Inicio
+		<div class="container">
+			<br>
+			<!-- Home slide -->
+			<div class="owl-carousel nav-style4 nav-center-center" data-items="1" data-nav="true" data-dots="false" data-loop="true" data-autoplay="true">
+				<a href="productos.html"><img src="./resources/images/slider-home.png" alt=""></a>
+				<a href="productos.html"><img src="./resources/images/slider-home2.png" alt=""></a>
+				<a href="productos.html"><img src="./resources/images/slider-home21.png" alt=""></a>
+			</div>
+		</div>
 	</main>
 
 	<footer></footer>
 
 	<script src="./scripts/main.js"></script>
-  
+
+	<script type="text/javascript" src="./scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./scripts/chosen.jquery.min.js"></script>
+	<script type="text/javascript" src="./scripts/owl.carousel.min.js"></script>
+
+	<script>
+		function init_carousel(){
+        $('.owl-carousel').each(function(){
+          var config = $(this).data();
+          var animateOut = $(this).data('animateout');
+          var animateIn = $(this).data('animatein');
+          if(typeof animateOut != 'undefined' ){
+            config.animateOut = animateOut;
+          }
+          if(typeof animateIn != 'undefined' ){
+            config.animateIn = animateIn;
+          }
+          var owl = $(this);
+          owl.owlCarousel(config);
+        });
+    }
+		init_carousel()
+	</script>
+
 </body>
+
 </html>

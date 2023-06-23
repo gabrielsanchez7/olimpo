@@ -10,6 +10,16 @@
 
 @font-face {
     font-family: 'GT Walsheim Pro';
+    src: local('GT Walsheim Pro Medium'), local('GT-Walsheim-Pro-Medium'),
+        url('GTWalsheimPro-Medium.woff2') format('woff2'),
+        url('GTWalsheimPro-Medium.woff') format('woff'),
+        url('GTWalsheimPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
     src: local('GT Walsheim Pro Bold'), local('GT-Walsheim-Pro-Bold'),
         url('GTWalsheimPro-Bold.woff2') format('woff2'),
         url('GTWalsheimPro-Bold.woff') format('woff'),

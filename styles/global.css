@@ -3,6 +3,8 @@
   --green-1: #096045;
   --green-2: #004422;
   --green-3: #00D645;
+  --gray-1: #B8BABF;
+  --gray-2: #818181;
   --yellow: #f8f538;
 }
 
@@ -13,7 +15,12 @@
   font-family: var(--font);
 }
 
-.container {
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container-layout {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -21,9 +28,16 @@
   padding: 0 100px;
 }
 @media screen and (max-width: 1350px) {
-  .container {
+  .container-layout {
     padding: 0 20px;
   }
+}
+
+.container {
+  display: block;
+  max-width: 85%;
+  width: 85%;
+  margin: auto;
 }
 
 .button {
@@ -52,16 +66,43 @@ button {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button:active, button:active, a:active {
   transform: translateY(1px);
 }
 
-main {
+.olimpo__flex {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+.olimpo__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.olimpo__head .olimpo__flex {
+  gap: 15px;
+}
+.olimpo__back {
+  font-size: 20px;
+  color: var(--green-1);
+}
+.olimpo__title {
+  font-size: 30px;
+  color: var(--green-1);
+}
+.olimpo__filter {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border: 1px solid var(--gray-1);
+  border-radius: 16px;
+}
+.olimpo__filter i {
+  font-size: 22px;
+  color: var(--green-1);
 }
 
 /*# sourceMappingURL=global.css.map */

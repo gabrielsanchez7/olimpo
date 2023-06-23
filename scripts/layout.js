@@ -5,11 +5,14 @@
  * @param {function} callback - Función a ejecutar al termino de la carga del HTML.
  */
 function loadHTMLSection(tag, callback) {
-  const sectionTag = document.querySelector(tag)
+  const sectionTags = document.querySelectorAll(tag)
+  
   fetch(`./${tag}.html`)
     .then(response => response.text())
     .then(html => {
-      sectionTag.outerHTML = html
+      Array.from(sectionTags, it => {
+        it.outerHTML = html
+      })
       callback() || function() {}
     })
 }
