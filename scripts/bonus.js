@@ -11,7 +11,16 @@ function selectCategory() {
   })
 }
 
+function selectBonus() {
+  const bonusCards = document.querySelectorAll('.bonus-card')
+  Array.from(bonusCards, it => {
+    it.addEventListener('click', () => {
+      location.href = "./bonus-detail.html"
+    })
+  })
+}
+
 window.onload = function() {
   selectCategory()
-  loadHTMLSection('bonus-card')
+  loadHTMLSection('bonus-card', selectBonus)
 }

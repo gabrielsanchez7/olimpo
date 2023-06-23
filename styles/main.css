@@ -1,7 +1,9 @@
 @import url("../resources/fonts/font-awesome.min.css");
 @import url("../resources/fonts/gt-walsheim.css");
+@import url("./style.css");
 @import url("./global.css");
 @import url("./layout.css");
 @import url("./bonus.css");
+@import url("./profile.css");
 
 /*# sourceMappingURL=main.css.map */

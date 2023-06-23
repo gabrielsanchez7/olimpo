@@ -35,8 +35,8 @@ body {
 
 .container {
   display: block;
-  max-width: 85%;
-  width: 85%;
+  max-width: 85% !important;
+  width: 85% !important;
   margin: auto;
 }
 

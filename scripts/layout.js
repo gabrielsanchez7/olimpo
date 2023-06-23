@@ -13,7 +13,10 @@ function loadHTMLSection(tag, callback) {
       Array.from(sectionTags, it => {
         it.outerHTML = html
       })
-      callback() || function() {}
+      
+      if(callback != null) {
+        callback()
+      }
     })
 }
 
