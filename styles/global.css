@@ -3,8 +3,9 @@
   --green-1: #096045;
   --green-2: #004422;
   --green-3: #00D645;
-  --gray-1: #B8BABF;
-  --gray-2: #818181;
+  --gray-1: #F2F2F2;
+  --gray-2: #B8BABF;
+  --gray-3: #818181;
   --yellow: #f8f538;
 }
 
@@ -93,16 +94,95 @@ button {
   font-size: 30px;
   color: var(--green-1);
 }
+.olimpo__subtitle {
+  font-size: 24px;
+  color: var(--green-1);
+  position: relative;
+}
+.olimpo__subtitle--center {
+  text-align: center;
+}
+.olimpo__subtitle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 60px;
+  bottom: -10px;
+  background-color: var(--yellow);
+  border-radius: 2px;
+}
+.olimpo__subtitle--center::after {
+  left: calc(50% - 30px);
+}
 .olimpo__filter {
   display: inline-block;
   height: 60px;
   width: 60px;
-  border: 1px solid var(--gray-1);
+  border: 1px solid var(--gray-2);
   border-radius: 16px;
 }
 .olimpo__filter i {
   font-size: 22px;
   color: var(--green-1);
+}
+.olimpo__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.product-card__image img {
+  width: 100%;
+}
+.product-card__detail {
+  padding: 20px;
+}
+.product-card__brand {
+  color: var(--gray-3);
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-card__name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.product-card__price {
+  color: var(--green-1);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+.product-card__old-price {
+  color: var(--gray-2);
+  text-decoration: line-through;
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-card__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.product-card__cart {
+  width: calc(100% - 55px);
+  background-color: var(--yellow);
+}
+.product-card__favorite {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  border: 1px solid var(--green-1);
+  border-radius: 10px;
+  color: var(--green-1);
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=global.css.map */

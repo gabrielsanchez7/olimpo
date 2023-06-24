@@ -1,8 +1,9 @@
 @import url("../resources/fonts/font-awesome.min.css");
 @import url("../resources/fonts/gt-walsheim.css");
-@import url("./style.css");
+@import url("../styles/glide.core.min.css");
 @import url("./global.css");
 @import url("./layout.css");
+@import url("./home.css");
 @import url("./bonus.css");
 @import url("./profile.css");
 
