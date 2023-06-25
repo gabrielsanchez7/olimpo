@@ -1,4 +1,4 @@
-.home {
+.home .banner__carousel {
   background-color: var(--gray-1);
 }
 .home .glide__slides {
@@ -28,7 +28,11 @@
   background-color: var(--yellow);
 }
 .home .promotions {
-  padding-top: 40px;
+  padding: 40px 0 60px 0;
+  background-color: var(--gray-1);
+}
+.home .promotions .glide__slides {
+  padding: 5px 0;
 }
 .home .promotions__carousel {
   margin-top: 40px;
@@ -44,8 +48,6 @@
 }
 .home .tutorial {
   padding-top: 60px;
-  margin-top: 60px;
-  background-color: white;
 }
 .home .tutorial__video {
   display: flex;
@@ -58,7 +60,21 @@
   height: 480px;
 }
 .home .links {
-  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 60px auto 100px auto;
+}
+.home .links__item {
+  width: 100%;
+}
+.home .links__item img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home .links__item .button {
+  padding: 15px 20px;
 }
 
 /*# sourceMappingURL=home.css.map */

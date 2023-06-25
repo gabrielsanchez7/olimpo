@@ -1,0 +1,18 @@
+.experiences .gallery .olimpo__subtitle {
+  margin-top: 0;
+}
+.experiences .gallery .olimpo__flex {
+  justify-content: space-between;
+}
+.experiences .gallery--second {
+  background-color: white;
+}
+.experiences .paginator {
+  padding-bottom: 60px;
+}
+.experiences .paginator--second {
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+/*# sourceMappingURL=experiences.css.map */

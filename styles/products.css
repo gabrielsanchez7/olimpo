@@ -1,0 +1,150 @@
+.products .banner img, .experiences .banner img {
+  width: 100%;
+}
+.products .olimpo__subtitle, .experiences .olimpo__subtitle {
+  margin: 60px 0 40px 0;
+}
+.products .categories, .experiences .categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+.products .categories__item, .experiences .categories__item {
+  width: 100%;
+  background-color: var(--gray-1);
+  padding: 40px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.products .categories__item i, .experiences .categories__item i {
+  font-size: 30px;
+  color: var(--gray-2);
+}
+.products .categories__item span, .experiences .categories__item span {
+  font-size: 16px;
+  color: var(--gray-3);
+}
+.products .categories__item--active, .experiences .categories__item--active {
+  background-color: var(--yellow);
+  color: var(--green-1);
+}
+.products .categories__item--active i, .products .categories__item--active span, .experiences .categories__item--active i, .experiences .categories__item--active span {
+  color: inherit;
+}
+.products .gallery, .experiences .gallery {
+  padding: 60px 0 60px 0;
+  background-color: var(--gray-1);
+}
+.products .gallery .gallery__config, .experiences .gallery .gallery__config {
+  margin-bottom: 30px;
+}
+.products .gallery .gallery__config .button, .experiences .gallery .gallery__config .button {
+  background-color: white;
+  border: 1px solid var(--gray-2);
+  color: var(--gray-3);
+  outline: none;
+}
+.products .gallery .gallery__list, .experiences .gallery .gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.products .gallery .product-card, .experiences .gallery .product-card {
+  width: calc(25% - 11.25px);
+}
+.products .paginator, .experiences .paginator {
+  background-color: var(--gray-1);
+  padding-bottom: 100px;
+}
+.products .paginator .container, .experiences .paginator .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.products .paginator__option, .experiences .paginator__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray-2);
+  color: var(--gray-3);
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.products .paginator__option--disabled, .experiences .paginator__option--disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+.products .paginator__option--active, .experiences .paginator__option--active {
+  background-color: var(--green-1);
+  color: var(--yellow);
+  font-weight: 500;
+  border-color: transparent;
+}
+
+.product-card {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--gray-1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.product-card__image img {
+  width: 100%;
+}
+.product-card__detail {
+  padding: 20px;
+}
+.product-card__brand {
+  color: var(--gray-3);
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-card__name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.product-card__price {
+  color: var(--green-1);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+.product-card__old-price {
+  color: var(--gray-2);
+  text-decoration: line-through;
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-card__actions {
+  display: flex;
+  align-items: normal;
+  gap: 10px;
+  margin-top: 20px;
+}
+.product-card__cart {
+  width: calc(100% - 55px);
+  background-color: var(--yellow);
+}
+.product-card__favorite {
+  display: inline-block;
+  min-height: 45px;
+  width: 45px;
+  border: 1px solid var(--green-1);
+  border-radius: 10px;
+  color: var(--green-1);
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=products.css.map */

@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Olimpo</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Olimpo</title>
 	<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./styles/main.css">
 	<script src="./scripts/load-scripts.js"></script>
 </head>
+
 <body>
 
 	<header></header>
 
-	<main>
-		Viajes
+	<main class="travel">
+		
+		<div class="seeker">
+			<form class="seeker__container">
+				<div class="seeker__config">
+					<h2 class="olimpo__subtitle">Buscar vuelos</h2>
+					<button type="button" class="button button--primary">Ida y vuelta</button>
+					<button type="button" class="button button--secondary">Solo ida</button>
+				</div>
+				<div class="seeker__row">
+					<div class="seeker__locations">
+						<div class="seeker__field">
+							<i class="fa-regular fa-circle"></i>
+							<div class="seeker__input">
+								<span class="seeker__placeholder">Origen</span>
+								<input class="seeker__value" type="text" placeholder="&iquest;D&eacute; d&oacute;nde viajas?">
+							</div>
+						</div>
+						<div class="seeker__field">
+							<i class="fa-solid fa-location-dot"></i>
+							<div class="seeker__input">
+								<span class="seeker__placeholder">Origen</span>
+								<input class="seeker__value" type="text" placeholder="&iquest;A d&oacute;nde vas?">
+							</div>
+						</div>
+					</div>
+					<div class="seeker__dates">
+						<div class="seeker__field">
+							<i class="fa-regular fa-calendar"></i>
+							<div class="seeker__input">
+								<div class="seeker__placeholder">Fecha de ida</div>
+								<input class="seeker__value" placeholder="&iquest;Cu&aacute;ndo viajas?" readonly>
+							</div>
+						</div>
+						<div class="seeker__field">
+							<i class="fa-regular fa-calendar-check"></i>
+							<div class="seeker__input">
+								<div class="seeker__placeholder">Fecha de regreso</div>
+								<input class="seeker__value" placeholder="&iquest;Cu&aacute;ndo vuelves?" readonly>
+							</div>
+						</div>
+					</div>
+					<div class="seeker__passengers">
+						<div class="seeker__field">
+							<i class="fa-solid fa-person-walking-luggage"></i>
+							<div class="seeker__input">
+								<div class="seeker__placeholder">Pasajeros</div>
+								<input class="seeker__value" type="text" value="1 Adulto" readonly>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="seeker__go button button--primary" type="button"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+			</form>
+		</div>
+		
+		<div class="popular container">
+			<h2 class="olimpo__subtitle">Vuelos más buscados</h2>
+			<div class="popular__list">
+				<!-- Diseño en el archivo travel-card.html -->
+				<travel-card></travel-card>
+				<travel-card></travel-card>
+				<travel-card></travel-card>
+				<travel-card></travel-card>
+				<travel-card></travel-card>
+				<travel-card></travel-card>
+				<travel-card></travel-card>
+				<travel-card></travel-card>
+			</div>
+		</div>
+		
 	</main>
 
 	<footer></footer>
 
 	<script src="./scripts/main.js"></script>
-  
+
 </body>
+
 </html>

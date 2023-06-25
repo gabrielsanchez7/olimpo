@@ -1,0 +1,173 @@
+.travel {
+  background-color: var(--gray-1);
+}
+.travel .seeker {
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-color: var(--gray-1);
+  background-image: url("../resources/images/banners/travel.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 60px;
+}
+.travel .seeker::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.travel .seeker__container {
+  display: block;
+  margin: auto;
+  max-width: 1100px;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 1;
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+}
+.travel .seeker__config {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.travel .seeker__config .olimpo__subtitle {
+  color: white;
+  margin-right: 30px;
+}
+.travel .seeker__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.travel .seeker__row > div {
+  background-color: white;
+  border: 1px solid var(--gray-2);
+  border-radius: 10px;
+}
+.travel .seeker__locations {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+.travel .seeker__locations .seeker__field:first-child {
+  border-right: 1px solid var(--gray-1);
+  border-width: 2px;
+}
+.travel .seeker__field {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  padding: 12px;
+  color: var(--green-1);
+}
+.travel .seeker__placeholder {
+  font-size: 12px;
+  color: var(--gray-3);
+}
+.travel .seeker__value {
+  border: none;
+  appearance: none;
+  width: 100%;
+  line-height: 30px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.travel .seeker__value::placeholder {
+  color: var(--gray-2);
+  font-weight: normal;
+}
+.travel .seeker__dates {
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+.travel .seeker__dates .seeker__field:first-child {
+  border-right: 1px solid var(--gray-1);
+  border-width: 2px;
+}
+.travel .seeker__passengers {
+  width: 20%;
+}
+.travel .seeker__go {
+  display: flex;
+  gap: 5px;
+  padding: 20px 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.travel .seeker__go i {
+  font-size: 16px;
+}
+.travel .popular {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.travel .popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+.travel .travel-card {
+  width: calc(50% - 7.5px);
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.travel .travel-card .olimpo__flex {
+  width: 100%;
+  justify-content: space-between;
+}
+.travel .travel-card__image img {
+  display: block;
+  width: 100%;
+}
+.travel .travel-card__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  width: calc(100% - 160px);
+  padding: 20px;
+}
+.travel .travel-card__detail > div {
+  width: 100%;
+}
+.travel .travel-card__location {
+  color: var(--green-1);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.travel .travel-card__fly-time {
+  color: var(--gray-3);
+  line-height: 28px;
+}
+.travel .travel-card__price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray-3);
+}
+.travel .travel-card__price img {
+  width: 25px;
+}
+
+/*# sourceMappingURL=travel.css.map */
