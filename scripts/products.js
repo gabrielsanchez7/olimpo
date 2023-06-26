@@ -95,7 +95,7 @@ function selectCategory() {
   const currentPrice = document.querySelector('.gallery__points')
   currentPrice.addEventListener('click', e => {
     const target = e.target
-    filterPrice = 2000
+    filterPrice = 5807
 
     target.classList.add('gallery__points--active')
     getProducts(filterCategory, filterPrice)
