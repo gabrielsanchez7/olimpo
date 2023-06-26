@@ -1,0 +1,458 @@
+[
+  {
+    "image": "product-1.jpeg",
+    "brand": "Sony",
+    "name": "Play Station 5",
+    "price": 14500,
+    "oldPrice": 15000,
+    "category": "tech"
+  },
+  {
+    "image": "product-2.jpeg",
+    "brand": "Adidas",
+    "name": "Pelota del mundial Qatar",
+    "price": 5500,
+    "oldPrice": 8000,
+    "category": "sport"
+  },
+  {
+    "image": "product-3.jpeg",
+    "brand": "Samsung",
+    "name": "Televisor HD 60'",
+    "price": 3500,
+    "oldPrice": 5000,
+    "category": "tech"
+  },
+  {
+    "image": "product-4.jpeg",
+    "brand": "Samsung",
+    "name": "Televisor QLED 55'",
+    "price": 5000,
+    "oldPrice": 7500,
+    "category": "tech"
+  },
+  {
+    "image": "product-5.jpeg",
+    "brand": "Nike",
+    "name": "Camiseta Barcelona 2023",
+    "price": 1500,
+    "oldPrice": 2300,
+    "category": "sport"
+  },
+  {
+    "image": "product-6.jpeg",
+    "brand": "Carolina Herrera",
+    "name": "Bad Boy",
+    "price": 4000,
+    "oldPrice": 6300,
+    "category": "fashion"
+  },
+  {
+    "image": "product-7.jpeg",
+    "brand": "Giorgio Armani",
+    "name": "Armani Code Edt 200 ml.",
+    "price": 3200,
+    "oldPrice": 4000,
+    "category": "fashion"
+  },
+  {
+    "image": "product-8.jpeg",
+    "brand": "Apple",
+    "name": "IPhone 13' 256 GB",
+    "price": 75200,
+    "oldPrice": 80000,
+    "category": "tech"
+  },
+  {
+    "image": "product-9.jpeg",
+    "brand": "MSI",
+    "name": "Laptop MSI 16' Core I7",
+    "price": 29500,
+    "oldPrice": 31000,
+    "category": "tech"
+  },
+  {
+    "image": "product-10.jpeg",
+    "brand": "Xiaomi",
+    "name": "Smart Watch GT2",
+    "price": 3500,
+    "oldPrice": 4200,
+    "category": "tech"
+  },
+  {
+    "image": "product-11.jpeg",
+    "brand": "Samsung",
+    "name": "Smart TV Full HD 4k 60'",
+    "price": 90500,
+    "oldPrice": 91000,
+    "category": "tech"
+  },
+  {
+    "image": "product-12.jpeg",
+    "brand": "HP",
+    "name": "Teclado Gamer",
+    "price": 70200,
+    "oldPrice": 71800,
+    "category": "tech"
+  },
+  {
+    "image": "product-13.jpeg",
+    "brand": "Balbas",
+    "name": "Vino Rose",
+    "price":580,
+    "oldPrice": 1000,
+    "category": "drink"
+  },
+  {
+    "image": "product-14.jpeg",
+    "brand": "Balbas",
+    "name": "Vino Blanco Selección",
+    "price": 1200,
+    "oldPrice": 1400,
+    "category": "drink"
+  },
+  {
+    "image": "product-15.jpeg",
+    "brand": "Johnnie Walker",
+    "name": "Gold Label Reserve",
+    "price": 4800,
+    "oldPrice": 6000,
+    "category": "drink"
+  },
+  {
+    "image": "product-16.jpeg",
+    "brand": "Giorgio Armani",
+    "name": "Armani Code Edt 200 ml.",
+    "price": 3800,
+    "oldPrice": 5000,
+    "category": "drink"
+  },
+  {
+    "image": "product-17.jpeg",
+    "brand": "Modern Princess",
+    "name": "Espumante",
+    "price": 4500,
+    "oldPrice": 5900,
+    "category": "drink"
+  },
+  {
+    "image": "product-18.jpeg",
+    "brand": "Vodka",
+    "name": "Bulldog",
+    "price": 6500,
+    "oldPrice": 7200,
+    "category": "drink"
+  },
+  {
+    "image": "product-19.jpeg",
+    "brand": "Porton",
+    "name": "Pisco",
+    "price": 6500,
+    "oldPrice": 7400,
+    "category": "drink"
+  },
+  {
+    "image": "product-20.jpeg",
+    "brand": "Beefeater",
+    "name": "Pink",
+    "price": 5200,
+    "oldPrice": 6000,
+    "category": "drink"
+  },
+  {
+    "image": "product-21.jpeg",
+    "brand": "Centro de salud",
+    "name": "Primera consulta al 50%",
+    "price":800,
+    "oldPrice": 1000,
+    "category": "health"
+  },
+  {
+    "image": "product-22.jpeg",
+    "brand": "Clínica Sur",
+    "name": "Primera consulta al 70%",
+    "price":950,
+    "oldPrice": 1200,
+    "category": "health"
+  },
+  {
+    "image": "product-23.jpeg",
+    "brand": "Dental Clinic",
+    "name": "Primera consulta al 65%",
+    "price": 1250,
+    "oldPrice": 1400,
+    "category": "health"
+  },
+  {
+    "image": "product-24.jpeg",
+    "brand": "Good Hope",
+    "name": "30% dscto en consulta",
+    "price": 1500,
+    "oldPrice": 1700,
+    "category": "health"
+  },
+  {
+    "image": "product-25.jpeg",
+    "brand": "Clínica San Felipe",
+    "name": "20% dscto en consulta",
+    "price": 1700,
+    "oldPrice": 1900,
+    "category": "health"
+  },
+  {
+    "image": "product-26.jpeg",
+    "brand": "Clínica Mondent",
+    "name": "20% dscto en limpieza dental",
+    "price": 1300,
+    "oldPrice": 1500,
+    "category": "health"
+  },
+  {
+    "image": "product-27.jpeg",
+    "brand": "Denstro Dental",
+    "name": "30% dscto en limpieza dental",
+    "price":900,
+    "oldPrice": 1100,
+    "category": "health"
+  },
+  {
+    "image": "product-28.jpeg",
+    "brand": "Dental Smile",
+    "name": "50% dscto en limpieza dental",
+    "price":500,
+    "oldPrice": 1200,
+    "category": "health"
+  },
+  {
+    "image": "product-29.jpeg",
+    "brand": "Oster",
+    "name": "Licuadora Semi-Industrial",
+    "price": 1200,
+    "oldPrice": 1400,
+    "category": "home"
+  },
+  {
+    "image": "product-30.jpeg",
+    "brand": "Thomas",
+    "name": "Batidora de Pedestal 300W",
+    "price":950,
+    "oldPrice": 1100,
+    "category": "home"
+  },
+  {
+    "image": "product-31.jpeg",
+    "brand": "Wurden",
+    "name": "Freidora de aire 3L",
+    "price":850,
+    "oldPrice": 1050,
+    "category": "home"
+  },
+  {
+    "image": "product-32.jpeg",
+    "brand": "Electrolux",
+    "name": "Horno microondas 20L",
+    "price":780,
+    "oldPrice":950,
+    "category": "home"
+  },
+  {
+    "image": "product-33.jpeg",
+    "brand": "Imaco",
+    "name": "Cafetera Expresso 19 bares",
+    "price":780,
+    "oldPrice":950,
+    "category": "home"
+  },
+  {
+    "image": "product-34.jpeg",
+    "brand": "Recco",
+    "name": "Extractor de Jugo 1.25 lt.",
+    "price":780,
+    "oldPrice":950,
+    "category": "home"
+  },
+  {
+    "image": "product-35.jpeg",
+    "brand": "Calvin Klein",
+    "name": "Descuento en Casacas 2023",
+    "price": 2580,
+    "oldPrice": 2800,
+    "category": "fashion"
+  },
+  {
+    "image": "product-36.jpeg",
+    "brand": "Tommy Hilfiger",
+    "name": "Descuento en Polos 2023",
+    "price": 2300,
+    "oldPrice": 2400,
+    "category": "fashion"
+  },
+  {
+    "image": "product-37.jpeg",
+    "brand": "Adidas",
+    "name": "20% dscto en zapatillas deportivas",
+    "price": 4200,
+    "oldPrice": 4350,
+    "category": "fashion"
+  },
+  {
+    "image": "product-38.jpeg",
+    "brand": "Calimod",
+    "name": "Zapatos 2x1",
+    "price": 2500,
+    "oldPrice": 2750,
+    "category": "fashion"
+  },
+  {
+    "image": "product-39.jpeg",
+    "brand": "Under Armour",
+    "name": "40% en ropa deportiva",
+    "price": 1200,
+    "oldPrice": 1950,
+    "category": "fashion"
+  },
+  {
+    "image": "product-40.jpeg",
+    "brand": "Crocs",
+    "name": "Verano 2x1",
+    "price": 1300,
+    "oldPrice": 2500,
+    "category": "fashion"
+  },
+  {
+    "image": "product-41.jpeg",
+    "brand": "Footloose",
+    "name": "Promoción de verano 2023",
+    "price": 5200,
+    "oldPrice": 5400,
+    "category": "fashion"
+  },
+  {
+    "image": "product-42.jpeg",
+    "brand": "Nike",
+    "name": "Zapatillas deportivas 2x1",
+    "price": 3200,
+    "oldPrice": 3400,
+    "category": "fashion"
+  },
+  {
+    "image": "product-43.jpeg",
+    "brand": "Ripley",
+    "name": "30% dscto en ropa de invierno",
+    "price": 5200,
+    "oldPrice": 5500,
+    "category": "coupon"
+  },
+  {
+    "image": "product-44.jpeg",
+    "brand": "Plaza Vea",
+    "name": "2x1 en comida congelada",
+    "price": 2200,
+    "oldPrice": 2500,
+    "category": "coupon"
+  },
+  {
+    "image": "product-45.jpeg",
+    "brand": "Wong",
+    "name": "20% en vinos y licores",
+    "price": 3200,
+    "oldPrice": 3500,
+    "category": "coupon"
+  },
+  {
+    "image": "product-46.jpeg",
+    "brand": "Metro",
+    "name": "30% dscto en abarrotes",
+    "price": 1100,
+    "oldPrice": 1300,
+    "category": "coupon"
+  },
+  {
+    "image": "product-47.jpeg",
+    "brand": "Tottus",
+    "name": "10% dscto en productos seleccionados",
+    "price": 1800,
+    "oldPrice": 2100,
+    "category": "coupon"
+  },
+  {
+    "image": "product-48.jpeg",
+    "brand": "Globilandia",
+    "name": "2x1 en decoraciones cumpleañeras",
+    "price": 2100,
+    "oldPrice": 2350,
+    "category": "coupon"
+  },
+  {
+    "image": "product-49.jpeg",
+    "brand": "Tai Loy",
+    "name": "40% en útiles escolares",
+    "price": 2600,
+    "oldPrice": 2850,
+    "category": "coupon"
+  },
+  {
+    "image": "product-50.jpeg",
+    "brand": "Circo Rousell",
+    "name": "40% en entradas",
+    "price": 1300,
+    "oldPrice": 1800,
+    "category": "fun"
+  },
+  {
+    "image": "product-51.jpeg",
+    "brand": "Karina y Timoteo",
+    "name": "2x1 en entradas",
+    "price": 1200,
+    "oldPrice": 2400,
+    "category": "fun"
+  },
+  {
+    "image": "product-52.jpeg",
+    "brand": "Circo sobre hielo",
+    "name": "20% dscto en entradas populares",
+    "price": 1800,
+    "oldPrice": 2100,
+    "category": "fun"
+  },
+  {
+    "image": "product-53.jpeg",
+    "brand": "Vamos al estadio",
+    "name": "2x1 en entradas para el clásico",
+    "price": 2000,
+    "oldPrice": 4000,
+    "category": "fun"
+  },
+  {
+    "image": "product-54.jpeg",
+    "brand": "Daddy Yankee",
+    "name": "15% dscto con tarjetas Interbank",
+    "price": 40000,
+    "oldPrice": 42500,
+    "category": "fun"
+  },
+  {
+    "image": "product-55.jpeg",
+    "brand": "Travel Day",
+    "name": "Entrada VIP a zona de camping",
+    "price": 10000,
+    "oldPrice": 12500,
+    "category": "fun"
+  },
+  {
+    "image": "product-56.jpeg",
+    "brand": "Cinemark",
+    "name": "50% dscto en confitería",
+    "price": 5000,
+    "oldPrice": 6200,
+    "category": "fun"
+  },
+  {
+    "image": "product-57.jpeg",
+    "brand": "La Rosa Naútica",
+    "name": "20% de descuento en vinos",
+    "price": 2500,
+    "oldPrice": 2800,
+    "category": "fun"
+  }
+]

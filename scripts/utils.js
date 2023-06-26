@@ -11,3 +11,20 @@ function getSiblings(element, selector = null) {
 
   return siblings
 }
+
+/**
+ * Convierte un tipo de dato numérico a formato de moneda
+ * @param {number} currencyString - Valor numérico
+ * @returns Valor en tipo moneda
+ */
+function toCurrency(currencyString = 0) {
+  return currencyString.toLocaleString()
+}
+
+/**
+ * Genera un valor random
+ * @returns Valor random
+ */
+function random() {
+  return Math.random() - 0.5
+}

@@ -23,6 +23,9 @@
   gap: 10px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
+.products .categories__item *, .experiences .categories__item * {
+  pointer-events: none;
+}
 .products .categories__item i, .experiences .categories__item i {
   font-size: 30px;
   color: var(--gray-2);
@@ -45,11 +48,16 @@
 .products .gallery .gallery__config, .experiences .gallery .gallery__config {
   margin-bottom: 30px;
 }
-.products .gallery .gallery__config .button, .experiences .gallery .gallery__config .button {
+.products .gallery .gallery__config .gallery__points, .products .gallery .gallery__config .button, .experiences .gallery .gallery__config .gallery__points, .experiences .gallery .gallery__config .button {
   background-color: white;
   border: 1px solid var(--gray-2);
   color: var(--gray-3);
   outline: none;
+}
+.products .gallery .gallery__config .gallery__points--active, .products .gallery .gallery__config .button--active, .experiences .gallery .gallery__config .gallery__points--active, .experiences .gallery .gallery__config .button--active {
+  background-color: var(--yellow);
+  color: var(--green-1);
+  border-color: transparent;
 }
 .products .gallery .gallery__list, .experiences .gallery .gallery__list {
   display: flex;
@@ -114,6 +122,10 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 .product-card__price {
   color: var(--green-1);

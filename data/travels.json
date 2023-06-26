@@ -1,0 +1,74 @@
+[
+  {
+    "image": "travel-1.jpeg",
+    "from": "Lima",
+    "destination": "Cusco",
+    "startDate": "04 Nov",
+    "endDate": "17 Nov",
+    "price": 1520,
+    "duration": "1hr 25min"
+  },
+  {
+    "image": "travel-2.jpeg",
+    "from": "Lima",
+    "destination": "Miami",
+    "startDate": "02 Oct",
+    "endDate": "10 Oct",
+    "price": 1980,
+    "duration": "5hr 55min"
+  },
+  {
+    "image": "travel-3.jpeg",
+    "from": "Lima",
+    "destination": "Buenos Aires",
+    "startDate": "02 Set",
+    "endDate": "08 Set",
+    "price": 1320,
+    "duration": "7hr 05min"
+  },
+  {
+    "image": "travel-4.jpeg",
+    "from": "Lima",
+    "destination": "New York",
+    "startDate": "17 Ago",
+    "endDate": "23 Ago",
+    "price": 3450,
+    "duration": "11hr 07min"
+  },
+  {
+    "image": "travel-5.jpeg",
+    "from": "Lima",
+    "destination": "Fort Lauderdale",
+    "startDate": "10 Ago",
+    "endDate": "16 Ago",
+    "price": 2560,
+    "duration": "5hr 55min"
+  },
+  {
+    "image": "travel-6.jpeg",
+    "from": "Lima",
+    "destination": "Madrid",
+    "startDate": "09 Nov",
+    "endDate": "15 Nov",
+    "price": 4780,
+    "duration": "11hr 45min"
+  },
+  {
+    "image": "travel-7.jpeg",
+    "from": "Lima",
+    "destination": "Cancún",
+    "startDate": "14 Ago",
+    "endDate": "20 Ago",
+    "price": 1720,
+    "duration": "9hr 05min"
+  },
+  {
+    "image": "travel-8.jpeg",
+    "from": "Lima",
+    "destination": "Barcelona",
+    "startDate": "06 Nov",
+    "endDate": "14 Nov",
+    "price": 4650,
+    "duration": "17hr 40min"
+  }
+]

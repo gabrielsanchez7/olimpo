@@ -27,6 +27,8 @@
       gap: 10px;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 
+      * { pointer-events: none; }
+
       i {
         font-size: 30px;
         color: var(--gray-2);
@@ -55,11 +57,18 @@
     .gallery__config {
       margin-bottom: 30px;
       
-      .button {
+      .gallery__points, .button {
         background-color: white;
         border: 1px solid var(--gray-2);
         color: var(--gray-3);
         outline: none;
+
+        &--active {
+          background-color: var(--yellow);
+          color: var(--green-1);
+          border-color: transparent;
+        }
+        
       }
       
     }
@@ -140,6 +149,10 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
   }
 
   &__price {

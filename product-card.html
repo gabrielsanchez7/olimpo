@@ -1,12 +1,12 @@
 <div class="product-card">
   <div class="product-card__image">
-    <img src="./resources/images/products/product-1.jpeg">
+    <img src="./resources/images/products/{{image}}">
   </div>
   <div class="product-card__detail">
-    <p class="product-card__brand">Sony</p>
-    <p class="product-card__name">Play Station 5</p>
-    <p class="product-card__price">3,500 Puntos</p>
-    <p class="product-card__old-price">5,000 Puntos</p>
+    <p class="product-card__brand">{{brand}}</p>
+    <p class="product-card__name">{{name}}</p>
+    <p class="product-card__price">{{price}} Puntos</p>
+    <p class="product-card__old-price">{{oldPrice}} Puntos</p>
     <div class="product-card__actions">
       <button class="product-card__cart button button--primary" type="button">Agregar al carrito</button>
       <button class="product-card__favorite button" type="button"><i class="fa-regular fa-heart"></i></button>

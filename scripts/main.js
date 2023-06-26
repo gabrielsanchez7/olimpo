@@ -11,7 +11,7 @@ if(url.includes('index')) {
   importScript('./scripts/bonus.js')
 } else if(url.includes('travel')) {
   importScript('./scripts/travel.js')
-} else if(url.includes('products')) {
+} else if(url.includes('products') || url.includes('experiences')) {
   importScript('./scripts/products.js')
 } else if(url.includes('profile')) {
   importScript('./scripts/profile.js')
