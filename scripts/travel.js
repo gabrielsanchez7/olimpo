@@ -30,7 +30,7 @@ function getTravels() {
       const replaced = html.replace('{{image}}', it.image)
         .replace('{{from}}', it.from)
         .replace('{{destination}}', it.destination)
-        .replace('{{price}}', it.price)
+        .replace('{{price}}', toCurrency(it.price))
         .replace('{{startDate}}', it.startDate)
         .replace('{{endDate}}', it.endDate)
         .replace('{{duration}}', it.duration)
