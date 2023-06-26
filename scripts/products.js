@@ -24,8 +24,8 @@ function getProducts(category, price, sort) {
   container.innerHTML = ''
 
   Promise.all([
-    fetch('../product-card.html'),
-    fetch('../data/products.json')
+    fetch('./product-card.html'),
+    fetch('./data/products.json')
   ]).then(responses => {
     return Promise.all(responses.map(res => {
       return res.url.includes('.html') ? res.text() : res.json()

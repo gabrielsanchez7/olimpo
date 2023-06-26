@@ -13,8 +13,8 @@ function getTravels() {
   container.innerHTML = ''
 
   Promise.all([
-    fetch('../travel-card.html'),
-    fetch('../data/travels.json')
+    fetch('./travel-card.html'),
+    fetch('./data/travels.json')
   ]).then(responses => {
     return Promise.all(responses.map(res => {
       return res.url.includes('.html') ? res.text() : res.json()
