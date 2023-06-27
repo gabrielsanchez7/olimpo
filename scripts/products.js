@@ -1,18 +1,3 @@
-function startCarousel() {
-  const carousels = document.querySelectorAll('.glide')
-  Array.from(carousels, it => {
-    const isHome = it.classList.contains('banner__carousel') ? true : false
-    const carousel = new Glide(it, {
-      autoplay: '4000',
-      type: 'carousel',
-      perView: isHome ? 1 : 4,
-      gap: isHome ? 0 : 30
-    })
-  
-    carousel.mount()
-  })
-}
-
 /**
  * Obtiene productos almacenados en el json de productos aplicando los filtros necesarios
  * @param {String} category - Filtro por categoría
@@ -109,7 +94,6 @@ function selectCategory() {
 }
 
 window.onload = function() {
-  startCarousel()
   getProducts()
   selectCategory()
   loadHTMLSection('product-card')

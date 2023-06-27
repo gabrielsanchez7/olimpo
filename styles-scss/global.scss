@@ -31,6 +31,10 @@ html, body {
   @media screen and (max-width: 1350px) {
     padding: 0 20px;
   }
+
+  @media screen and (max-width: 450px) {
+    padding: 0 15px;
+  }
   
 }
 
@@ -43,6 +47,11 @@ html, body {
   @media screen and (max-width: 1420px) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -135,6 +144,10 @@ button {
 
     &--center::after {
       left: calc(50% - 30px);
+    }
+
+    @media screen and (max-width: 720px) {
+      font-size: 20px;
     }
 
   }

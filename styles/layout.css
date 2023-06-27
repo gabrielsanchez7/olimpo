@@ -55,11 +55,15 @@
 .header__search input::placeholder {
   color: var(--gray-2);
 }
+@media screen and (max-width: 620px) {
+  .header__search {
+    display: none;
+  }
+}
 .header__user {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-right: 20px;
 }
 .header__profile {
   display: flex;
@@ -148,6 +152,11 @@
 @media screen and (max-width: 1000px) {
   .header__mobile {
     display: flex;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header__mobile {
+    padding: 0 10px;
   }
 }
 

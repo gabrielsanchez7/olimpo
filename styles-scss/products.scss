@@ -48,6 +48,29 @@
       }
       
     }
+
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+      justify-content: start;
+
+      &__item {
+        width: calc(20% - 12px);
+      }
+      
+    }
+
+    @media screen and (max-width: 680px) {
+      &__item { width: calc(25% - 45px / 4); }
+    }
+
+    @media screen and (max-width: 530px) {
+      &__item { width: calc(100% / 3 - 10px); }
+    }
+
+    @media screen and (max-width: 380px) {
+      &__item { width: calc(50% - 15px / 2); }
+    }
+
   }
 
   .gallery {
@@ -56,6 +79,8 @@
     
     .gallery__config {
       margin-bottom: 30px;
+      display: flex;
+      gap: 15px;
       
       .gallery__points, .button {
         background-color: white;
@@ -70,6 +95,13 @@
         }
         
       }
+
+      @media screen and (max-width: 535px) {
+        flex-direction: column;
+        gap: 10px;
+
+        .button { text-align: center }
+      }
       
     }
     
@@ -81,6 +113,19 @@
 
     .product-card {
       width: calc(25% - 45px / 4);
+
+      @media screen and (max-width: 1200px) {
+        width: calc(100% / 3 - 10px);
+      }
+
+      @media screen and (max-width: 850px) {
+        width: calc(50% - 15px / 2);
+      }
+
+      @media screen and (max-width: 580px) {
+        width: 100%;
+      }
+      
     }
     
   }
@@ -120,7 +165,7 @@
       }
       
     }
-    
+
   }
   
 }
@@ -189,6 +234,17 @@
     border-radius: 10px;
     color: var(--green-1);
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 450px) {
+
+    &__brand, &__price, &__old-price { font-size: 14px; }
+    &__name {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &__old-price { line-height: 18px; }
+    
   }
   
 }

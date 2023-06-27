@@ -33,6 +33,11 @@ html, body {
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 450px) {
+  .container-layout {
+    padding: 0 15px;
+  }
+}
 
 .container {
   display: block;
@@ -44,6 +49,12 @@ html, body {
   .container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -128,6 +139,11 @@ button {
 }
 .olimpo__subtitle--center::after {
   left: calc(50% - 30px);
+}
+@media screen and (max-width: 720px) {
+  .olimpo__subtitle {
+    font-size: 20px;
+  }
 }
 .olimpo__filter {
   display: inline-block;

@@ -1,12 +1,26 @@
 .bonus {
   padding-top: 60px;
 }
+.bonus .head .olimpo__back {
+  display: inline-block;
+  margin-bottom: 30px;
+}
 .bonus__options {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
   margin-top: 50px;
+}
+@media screen and (max-width: 800px) {
+  .bonus__options {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bonus__options {
+    gap: 10px;
+  }
 }
 .bonus__option {
   color: var(--gray-2);
@@ -43,6 +57,22 @@
 .bonus__option--active::after {
   background-color: var(--green-1);
 }
+@media screen and (max-width: 680px) {
+  .bonus__option {
+    font-size: 16px;
+  }
+  .bonus__option i {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bonus__option {
+    font-size: 14px;
+  }
+  .bonus__option i {
+    font-size: 16px;
+  }
+}
 .bonus__content {
   background-color: var(--gray-1);
   padding: 40px 0;
@@ -54,6 +84,11 @@
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 900px) {
+  .bonus__cards {
+    gap: 15px;
+  }
 }
 
 .bonus-card {
@@ -94,6 +129,21 @@
   color: var(--green-1);
   font-size: 20px;
   margin-right: 4px;
+}
+@media screen and (max-width: 900px) {
+  .bonus-card {
+    width: calc(33.3333333333% - 10px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .bonus-card {
+    width: calc(50% - 7.5px);
+  }
+}
+@media screen and (max-width: 415px) {
+  .bonus-card {
+    width: 100%;
+  }
 }
 
 .bonus-detail {

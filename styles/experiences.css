@@ -7,6 +7,15 @@
 .experiences .gallery--second {
   background-color: white;
 }
+@media screen and (max-width: 850px) {
+  .experiences .gallery .gallery__config {
+    width: 100%;
+  }
+  .experiences .gallery .olimpo__flex {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .experiences .paginator {
   padding-bottom: 60px;
 }

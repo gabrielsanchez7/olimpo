@@ -13,6 +13,16 @@
     &--second {
       background-color: white;
     }
+
+    @media screen and (max-width: 850px) {
+      .gallery__config {
+        width: 100%;
+      }
+      .olimpo__flex {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
     
   }
 

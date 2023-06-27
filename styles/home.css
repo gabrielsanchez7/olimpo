@@ -76,5 +76,10 @@
 .home .links__item .button {
   padding: 15px 20px;
 }
+@media screen and (max-width: 630px) {
+  .home .links {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */

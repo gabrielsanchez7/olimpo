@@ -41,12 +41,38 @@
 .products .categories__item--active i, .products .categories__item--active span, .experiences .categories__item--active i, .experiences .categories__item--active span {
   color: inherit;
 }
+@media screen and (max-width: 1024px) {
+  .products .categories, .experiences .categories {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .products .categories__item, .experiences .categories__item {
+    width: calc(20% - 12px);
+  }
+}
+@media screen and (max-width: 680px) {
+  .products .categories__item, .experiences .categories__item {
+    width: calc(25% - 11.25px);
+  }
+}
+@media screen and (max-width: 530px) {
+  .products .categories__item, .experiences .categories__item {
+    width: calc(33.3333333333% - 10px);
+  }
+}
+@media screen and (max-width: 380px) {
+  .products .categories__item, .experiences .categories__item {
+    width: calc(50% - 7.5px);
+  }
+}
 .products .gallery, .experiences .gallery {
   padding: 60px 0 60px 0;
   background-color: var(--gray-1);
 }
 .products .gallery .gallery__config, .experiences .gallery .gallery__config {
   margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
 }
 .products .gallery .gallery__config .gallery__points, .products .gallery .gallery__config .button, .experiences .gallery .gallery__config .gallery__points, .experiences .gallery .gallery__config .button {
   background-color: white;
@@ -59,6 +85,15 @@
   color: var(--green-1);
   border-color: transparent;
 }
+@media screen and (max-width: 535px) {
+  .products .gallery .gallery__config, .experiences .gallery .gallery__config {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .products .gallery .gallery__config .button, .experiences .gallery .gallery__config .button {
+    text-align: center;
+  }
+}
 .products .gallery .gallery__list, .experiences .gallery .gallery__list {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +101,21 @@
 }
 .products .gallery .product-card, .experiences .gallery .product-card {
   width: calc(25% - 11.25px);
+}
+@media screen and (max-width: 1200px) {
+  .products .gallery .product-card, .experiences .gallery .product-card {
+    width: calc(33.3333333333% - 10px);
+  }
+}
+@media screen and (max-width: 850px) {
+  .products .gallery .product-card, .experiences .gallery .product-card {
+    width: calc(50% - 7.5px);
+  }
+}
+@media screen and (max-width: 580px) {
+  .products .gallery .product-card, .experiences .gallery .product-card {
+    width: 100%;
+  }
 }
 .products .paginator, .experiences .paginator {
   background-color: var(--gray-1);
@@ -157,6 +207,18 @@
   border-radius: 10px;
   color: var(--green-1);
   font-size: 16px;
+}
+@media screen and (max-width: 450px) {
+  .product-card__brand, .product-card__price, .product-card__old-price {
+    font-size: 14px;
+  }
+  .product-card__name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .product-card__old-price {
+    line-height: 18px;
+  }
 }
 
 /*# sourceMappingURL=products.css.map */
