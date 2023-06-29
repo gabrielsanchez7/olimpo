@@ -301,7 +301,7 @@ button {
 .modal--product .modal__quantity button {
   display: block;
   height: 40px;
-  width: 40px;
+  min-width: 40px;
   color: var(--yellow);
   background-color: var(--green-1);
   border-radius: 50%;
