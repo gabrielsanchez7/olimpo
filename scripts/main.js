@@ -15,6 +15,4 @@ if(url.includes('index')) {
   importScript('./scripts/products.js')
 } else if(url.includes('profile')) {
   importScript('./scripts/profile.js')
-} else {
-  importScript('./scripts/home.js')
 }

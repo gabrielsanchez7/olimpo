@@ -1,0 +1,217 @@
+.cart .timeline {
+  background-color: var(--gray-1);
+  padding: 40px 0;
+}
+.cart .timeline .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart .timeline__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 150px;
+}
+.cart .timeline__step--active .timeline__icon, .cart .timeline__step--active .timeline__name {
+  color: var(--green-1);
+}
+.cart .timeline__step--active .timeline__dot {
+  border-color: var(--green-1);
+  background-color: var(--green-1);
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart .timeline__step--active .timeline__dot--before {
+  background: linear-gradient(90deg, var(--green-1) 0%, var(--gray-2) 100%);
+}
+.cart .timeline__step--active .timeline__pause {
+  display: block;
+  color: white;
+  font-size: 10px;
+}
+.cart .timeline__icon {
+  font-size: 26px;
+  color: var(--gray-2);
+}
+.cart .timeline__dot {
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 4px solid var(--gray-2);
+  border-radius: 50%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.cart .timeline__dot--before {
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: var(--gray-2);
+  top: calc(50% - 1px);
+  left: 0;
+  transform: translateZ(-1px);
+}
+.cart .timeline__pause {
+  display: none;
+}
+.cart .timeline__name {
+  color: var(--gray-2);
+  font-size: 14px;
+  font-weight: 500;
+}
+.cart .head {
+  padding-top: 60px;
+}
+.cart .head .olimpo__back {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.cart .table {
+  display: table;
+  width: 100%;
+  margin-top: 40px;
+}
+.cart .table__head {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 14px;
+  color: var(--gray-2);
+  font-weight: 500;
+  padding: 30px 0;
+}
+.cart .table__head li:nth-child(2) {
+  padding-left: 115px;
+}
+.cart .table__body {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-top: 1px solid var(--gray-1);
+  padding: 30px 0;
+}
+.cart .table__head li:nth-child(1), .cart .table__body li:nth-child(1) {
+  width: 5%;
+  text-align: center;
+}
+.cart .table__head li:nth-child(2), .cart .table__body li:nth-child(2) {
+  width: 35%;
+}
+.cart .table__head li:nth-child(3), .cart .table__body li:nth-child(3) {
+  width: 20%;
+}
+.cart .table__head li:nth-child(4), .cart .table__body li:nth-child(4) {
+  width: 20%;
+}
+.cart .table__head li:nth-child(5), .cart .table__body li:nth-child(5) {
+  width: 20%;
+}
+.cart .table__delete button {
+  color: var(--gray-2);
+  transition: 0.25s;
+  font-size: 20px;
+}
+.cart .table__delete button:hover {
+  color: #c23232;
+}
+.cart .table__product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cart .table__image {
+  width: 100px;
+  display: inline-block;
+}
+.cart .table__detail {
+  display: inline-block;
+}
+.cart .table__brand {
+  color: var(--gray-2);
+  margin-top: 10px;
+}
+.cart .table__name {
+  font-size: 18px;
+  display: block;
+  margin-top: 5px;
+}
+.cart .table__price, .cart .table__subtotal {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+.cart .table__price img, .cart .table__subtotal img {
+  width: 20px;
+}
+.cart .table__quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart .table__quantity button {
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: var(--yellow);
+  background-color: var(--green-1);
+  border-radius: 50%;
+  font-size: 16px;
+}
+.cart .table__quantity input {
+  appearance: none;
+  border: 1px solid var(--gray-2);
+  line-height: 38px;
+  border-radius: 20px;
+  width: 80px;
+  text-align: center;
+  color: var(--green-1);
+  font-weight: 500;
+  font-size: 18px;
+  outline: none;
+}
+.cart .resume {
+  padding: 30px;
+  background-color: var(--gray-1);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  margin: 20px 0 100px 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart .resume h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.cart .resume .resume__total {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.cart .resume .resume__total img {
+  width: 30px;
+}
+.cart .resume .resume__total span {
+  font-size: 18px;
+  color: var(--green-1);
+  font-weight: 500;
+}
+.cart .resume .button {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=exchange.css.map */
