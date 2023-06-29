@@ -47,77 +47,87 @@
 			<h2 class="olimpo__subtitle">Carrito de canjes</h2>
 		</div>
 
-		<div class="table container">
-			<ul class="table__head">
-				<li></li>
-				<li>Producto</li>
-				<li>Puntos</li>
-				<li>Cantidad</li>
-				<li>Subtotal</li>
-			</ul>
-			<ul class="table__body">
-				<li class="table__delete">
-					<button type="button"><i class="fa-solid fa-trash-can"></i></button>
-				</li>
-				<li class="table__product">
-					<img class="table__image" src="./resources/images/products/product-1.jpeg" />
-					<span class="table__detail">
-						<span class="table__brand">Sony</span>
-						<span class="table__name">Play Station 5</span>
-					</span>
-				</li>
-				<li class="table__price">
-					<img src="./resources/images/coin.svg" />
-					<p>14,500</p>
-				</li>
-				<li class="table__quantity">
-					<button class="fa-solid fa-plus" type="button"></button>
-					<input type="text" value="2">
-					<button class="fa-solid fa-minus" type="button"></button>
-				</li>
-				<li class="table__subtotal">
-					<img src="./resources/images/coin.svg" />
-					<p>29,000</p>
-				</li>
-			</ul>
-			<ul class="table__body">
-				<li class="table__delete">
-					<button type="button"><i class="fa-solid fa-trash-can"></i></button>
-				</li>
-				<li class="table__product">
-					<img class="table__image" src="./resources/images/products/product-2.jpeg" />
-					<span class="table__detail">
-						<span class="table__brand">Adidas</span>
-						<span class="table__name">Pelota del mundial Qatar</span>
-					</span>
-				</li>
-				<li class="table__price">
-					<img src="./resources/images/coin.svg" />
-					<p>5,500</p>
-				</li>
-				<li class="table__quantity">
-					<button class="fa-solid fa-plus" type="button"></button>
-					<input type="text" value="1">
-					<button class="fa-solid fa-minus" type="button"></button>
-				</li>
-				<li class="table__subtotal">
-					<img src="./resources/images/coin.svg" />
-					<p>5,000</p>
-				</li>
-			</ul>
-		</div>
+		<div class="olimpo__flex container">
 
-		<div class="container">
+			<div class="table">
+				<ul class="table__head">
+					<li></li>
+					<li>Producto</li>
+					<li>Puntos</li>
+					<li>Cantidad</li>
+				</ul>
+				<ul class="table__body">
+					<li class="table__delete">
+						<button type="button"><i class="fa-solid fa-trash-can"></i></button>
+					</li>
+					<li class="table__product">
+						<img class="table__image" src="./resources/images/products/product-1.jpeg" />
+						<span class="table__detail">
+							<span class="table__brand">Sony</span>
+							<span class="table__name">Play Station 5</span>
+						</span>
+					</li>
+					<li class="table__price">
+						<img src="./resources/images/coin.svg" />
+						<p>14,500</p>
+					</li>
+					<li class="table__quantity">
+						<button class="fa-solid fa-minus" type="button"></button>
+						<input type="text" value="2">
+						<button class="fa-solid fa-plus" type="button"></button>
+					</li>
+				</ul>
+				<ul class="table__body">
+					<li class="table__delete">
+						<button type="button"><i class="fa-solid fa-trash-can"></i></button>
+					</li>
+					<li class="table__product">
+						<img class="table__image" src="./resources/images/products/product-2.jpeg" />
+						<span class="table__detail">
+							<span class="table__brand">Adidas</span>
+							<span class="table__name">Pelota del mundial Qatar</span>
+						</span>
+					</li>
+					<li class="table__price">
+						<img src="./resources/images/coin.svg" />
+						<p>5,500</p>
+					</li>
+					<li class="table__quantity">
+						<button class="fa-solid fa-minus" type="button"></button>
+						<input type="text" value="1">
+						<button class="fa-solid fa-plus" type="button"></button>
+					</li>
+				</ul>
+			</div>
+	
 			<div class="resume">
 				<div>
 					<h3>Resumen de canje</h3>
-					<p class="resume__total">
-						<img src="./resources/images/coin.svg" />
-						<span>34,500</span>
-					</p>
+					<div class="resume__row">
+						<p class="resume__name">
+							<span>Play Station 5</span>
+							<small>2 productos</small>
+						</p>
+						<p class="resume__subtotal">29,000</p>
+					</div>
+					<div class="resume__row">
+						<p class="resume__name">
+							<span>Pelota del mundial Qatar</span>
+							<small>1 producto</small>
+						</p>
+						<p class="resume__subtotal">5,500</p>
+					</div>
+					<div class="resume__row resume__row--subtotal">
+						<p class="resume__name">
+							<span>3 productos</span>
+							<small>Total por</small>
+						</p>
+						<div class="resume__subtotal"><img src="./resources/images/coin.svg" /> 34,500</div>
+					</div>
 				</div>
 				<a href="./delivery.html" class="button button--primary">Canjear 3 productos</a>
 			</div>
+			
 		</div>
 		
   </main>
