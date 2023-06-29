@@ -162,4 +162,165 @@ button {
   justify-content: center;
 }
 
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.25s;
+}
+.modal__content {
+  width: 1080px;
+  transform: translateY(100vh);
+  transition: 0.25s;
+}
+.modal__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+.modal__title {
+  font-size: 24px;
+}
+.modal__close {
+  color: var(--green-1);
+  font-size: 24px;
+  background-color: var(--yellow);
+  display: block;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.modal__container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+.modal--product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.modal--product .modal__image {
+  width: 40%;
+}
+.modal--product .modal__detail {
+  width: 60%;
+}
+.modal--product .modal__brand {
+  font-size: 18px;
+  color: var(--gray-3);
+}
+.modal--product .modal__name {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.modal--product .modal__added {
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--green-3);
+  color: white;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+.modal--product .modal__added i {
+  font-size: 20px;
+}
+.modal--product .modal__price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--green-1);
+  margin-top: 20px;
+}
+.modal--product .modal__price img {
+  width: 30px;
+}
+.modal--product .modal__price > span:not(.modal__old-price) {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.modal--product .modal__old-price {
+  background-color: var(--gray-2);
+  color: white;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  display: inline-flex;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.modal--product .modal__old-price small {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 1px;
+}
+.modal--product .modal__old-price span {
+  text-decoration: line-through;
+}
+.modal--product .modal__desc {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 24px;
+}
+.modal--product .modal__options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+.modal--product .modal__options .button {
+  line-height: 40px;
+  padding: 0 11px;
+}
+.modal--product .modal__quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.modal--product .modal__quantity button {
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: var(--yellow);
+  background-color: var(--green-1);
+  border-radius: 50%;
+  font-size: 16px;
+}
+.modal--product .modal__quantity input {
+  appearance: none;
+  border: 1px solid var(--gray-2);
+  line-height: 38px;
+  border-radius: 20px;
+  width: 80px;
+  text-align: center;
+  color: var(--green-1);
+  font-weight: 500;
+  font-size: 18px;
+  outline: none;
+}
+.modal--product .modal__link {
+  display: none;
+}
+
 /*# sourceMappingURL=global.css.map */

@@ -53,6 +53,8 @@ function getProducts(category, price, sort) {
       
       div.outerHTML = replaced
     })
+
+    openProductDetail()
   })
 }
 

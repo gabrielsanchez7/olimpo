@@ -1,9 +1,6 @@
 .home .banner__carousel {
   background-color: var(--gray-1);
 }
-.home .glide__slides {
-  cursor: move;
-}
 .home .glide__slide img {
   width: 100%;
 }

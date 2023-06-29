@@ -2,23 +2,28 @@ function startCarousel() {
   const carousels = document.querySelectorAll('.glide')
   Array.from(carousels, it => {
     const isBanner = it.classList.contains('banner__carousel') ? true : false
-    const carousel = new Glide(it, {
+
+    const glideConfig = {
       autoplay: '4000',
       type: 'carousel',
       perView: isBanner ? 1 : 4,
-      gap: isBanner ? 0 : 30,
-      peek: isBanner ? null : {
+      gap: isBanner ? 0 : 30
+    }
+
+    if(!isBanner) {
+      glideConfig.peek = {
         before: 0,
         after: 150
-      },
-      breakpoints: isBanner ? null : {
+      }
+      glideConfig.breakpoints = {
         1280: { perView: 3, peek: { before: 0, after: 180 } },
         950: { perView: 2, peek: { before: 0, after: 200 } },
         650: { perView: 1, peek: { before: 0, after: 220 } },
         500: { perView: 1, peek: { before: 0, after: 150 }, gap: 15 }
       }
-    })
-  
+    }
+
+    const carousel = new Glide(it, glideConfig)
     carousel.mount()
   })
 }
@@ -56,11 +61,10 @@ function getPromotions() {
     })
 
     startCarousel()
+    openProductDetail()
   })
 }
 
 window.onload = function() {
   getPromotions()
-  // loadHTMLSection('product-card')
-  // startCarousel()
 }
