@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Olimpo</title>
+	<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./styles/main.css">
+	<script src="./scripts/load-scripts.js"></script>
+</head>
+
+<body>
+
+	<header></header>
+
+	<main class="exchange confirmation">
+
+    <div class="timeline">
+			<div class="container">
+				<div class="timeline__step timeline__step--passed">
+					<i class="timeline__icon fa-solid fa-cart-shopping"></i>
+					<div class="timeline__dot">
+						<i class="timeline__done fa-solid fa-check"></i>
+						<span class="timeline__dot--before"></span>
+					</div>
+					<p class="timeline__name">Carrito</p>
+				</div>
+				<div class="timeline__step timeline__step--passed">
+					<i class="timeline__icon fa-solid fa-truck-ramp-box"></i>
+					<div class="timeline__dot">
+						<i class="timeline__done fa-solid fa-check"></i>
+						<span class="timeline__dot--before"></span>
+					</div>
+					<p class="timeline__name">Entrega</p>
+				</div>
+				<div class="timeline__step timeline__step--active">
+					<i class="timeline__icon fa-solid fa-clipboard-check"></i>
+					<div class="timeline__dot">
+            <i class="timeline__pause fa-solid fa-pause"></i>
+          </div>
+					<p class="timeline__name">Confirmaci&oacute;n</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="head container">
+			<h2 class="olimpo__subtitle olimpo__subtitle--center">&iexcl;Felicidades!<br>Tu canje ha sido confirmado</h2>
+      <p class="head__desc">Enviaremos al correo <b>mailcliente@gmail.com</b> una copia de la confirmaci&oacute;n de tu canje</p>
+		</div>
+
+    <div class="confirmation__flex container">
+
+      <div class="confirmation__products">
+        <h3 class="confirmation__subtitle">Productos canjeados</h3>
+        <div class="confirmation__detail">
+          <img src="./resources/images/products/product-1.jpeg"/>
+          <div class="confirmation__product">
+            <p class="confirmation__brand">Sony</p>
+            <p class="confirmation__name">Play Station 5 <span class="confirmation__quantity">x2</span></p>
+            <p class="confirmation__price">
+              <img src="./resources/images/coin.svg" />
+              <span>29,000</span>
+            </p>
+          </div>
+        </div>
+        <div class="confirmation__detail">
+          <img src="./resources/images/products/product-2.jpeg"/>
+          <div class="confirmation__product">
+            <p class="confirmation__brand">Adidas</p>
+            <p class="confirmation__name">Pelota del mundial Qatar <span class="confirmation__quantity">x1</span></p>
+            <p class="confirmation__price">
+              <img src="./resources/images/coin.svg" />
+              <span>5,500</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="confirmation__summary">
+        <h3>Nro, de pedido 85421357</h3>
+        <div class="confirmation__summary-item">
+          <i class="fa-solid fa-clock"></i>
+          <p>
+            <span>Fecha y hora de canje</span>
+            <span>29 de Junio, 2023 - 14:58:24</span>
+          </p>
+        </div>
+        <div class="confirmation__summary-item">
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>
+            <span>Rango de entrega</span>
+            <span>01 de Julio - 01 de Julio</span>
+          </p>
+        </div>
+        <div class="confirmation__summary-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>
+            <span>Direcci&oacute;n de entrega</span>
+            <span>Calle Santa Isabel 265, Dpto 201, Miraflores, Lima</span>
+          </p>
+        </div>
+
+        <div class="confirmation__pay">
+
+          <h3>Resumen de pago</h3>
+					<div class="resume__row">
+						<p class="resume__name">
+							<span>Play Station 5</span>
+							<small>2 productos</small>
+						</p>
+						<p class="resume__subtotal">29,000</p>
+					</div>
+					<div class="resume__row">
+						<p class="resume__name">
+							<span>Pelota del mundial Qatar</span>
+							<small>1 producto</small>
+						</p>
+						<p class="resume__subtotal">5,500</p>
+					</div>
+					<div class="resume__row">
+            <p class="resume__name">
+              <span>Env&iacute;o a Casa</span>
+              <small>Miraflores, Lima</small>
+            </p>
+            <div class="resume__subtotal">500</div>
+          </div>
+					<div class="resume__row resume__row--subtotal">
+						<p class="resume__name">
+							<span>3 productos</span>
+							<small>Total por</small>
+						</p>
+						<div class="resume__subtotal"><img src="./resources/images/coin.svg" /> 35,000</div>
+					</div>
+          
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="confirmation__home container">
+      <a class="button button--primary" href="./index.html">Volver al inicio</a>
+    </div>
+    
+  </main>
+
+	<footer></footer>
+
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
