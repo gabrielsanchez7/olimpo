@@ -186,6 +186,8 @@ button {
   justify-content: center;
   opacity: 0;
   transition: 0.25s;
+  padding: 30px;
+  z-index: 2;
 
   &__content {
     width: 1080px;
@@ -359,6 +361,27 @@ button {
       
       &__link { display: none; }
       
+    }
+    
+  }
+
+  @media screen and (max-width: 800px) {
+
+    &__container { flex-direction: column; }
+    &--product &__detail { width: 100%; }
+    
+  }
+
+  @media screen and (max-width: 480px) {
+
+    &--product &__name {
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    &--product &__options {
+      flex-direction: column;
+      align-items: start;
     }
     
   }
