@@ -2,7 +2,7 @@
   --font: "GT Walsheim Pro";
   --green-1: #096045;
   --green-2: #004422;
-  --green-3: #00D645;
+  --green-3: #3CC666;
   --gray-1: #F2F2F2;
   --gray-2: #B8BABF;
   --gray-3: #818181;
@@ -58,14 +58,16 @@ html, body {
 .button {
   display: inline-block;
   padding: 11px;
-  border-radius: 10px;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 500;
+  border-radius: 30px;
+  font-size: 16px;
+  // text-transform: uppercase;
+  // font-weight: 500;
 
   &--primary {
-    background-color: var(--yellow);
-    color: var(--green-1);
+    // background-color: var(--yellow);
+    // color: var(--green-1);
+    background-color: var(--green-3);
+    color: white;
   }
 
   &--secondary {

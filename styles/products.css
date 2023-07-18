@@ -7,63 +7,52 @@
 .products .categories, .experiences .categories {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
+  justify-content: center;
+  gap: 30px;
   margin-bottom: 60px;
 }
 .products .categories__item, .experiences .categories__item {
-  width: 100%;
-  background-color: var(--gray-1);
-  padding: 40px 20px;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
 }
 .products .categories__item *, .experiences .categories__item * {
   pointer-events: none;
 }
-.products .categories__item i, .experiences .categories__item i {
-  font-size: 30px;
+.products .categories__item > span, .experiences .categories__item > span {
+  font-size: 14px;
   color: var(--gray-2);
 }
-.products .categories__item span, .experiences .categories__item span {
-  font-size: 16px;
-  color: var(--gray-3);
-}
 .products .categories__item--active, .experiences .categories__item--active {
-  background-color: var(--yellow);
   color: var(--green-1);
+  border-bottom-color: var(--green-1);
 }
-.products .categories__item--active i, .products .categories__item--active span, .experiences .categories__item--active i, .experiences .categories__item--active span {
+.products .categories__item--active span, .experiences .categories__item--active span {
   color: inherit;
 }
-@media screen and (max-width: 1024px) {
-  .products .categories, .experiences .categories {
-    flex-wrap: wrap;
-    justify-content: start;
-  }
-  .products .categories__item, .experiences .categories__item {
-    width: calc(20% - 12px);
-  }
+.products .categories__item--active:first-child svg path, .experiences .categories__item--active:first-child svg path {
+  stroke: var(--green-1);
 }
-@media screen and (max-width: 680px) {
-  .products .categories__item, .experiences .categories__item {
-    width: calc(25% - 11.25px);
-  }
+.products .categories__item--active:not(:first-child) svg path, .experiences .categories__item--active:not(:first-child) svg path {
+  fill: var(--green-1);
 }
-@media screen and (max-width: 530px) {
-  .products .categories__item, .experiences .categories__item {
-    width: calc(33.3333333333% - 10px);
-  }
+.products .categories__item--active.b svg path,
+.products .categories__item--active.b svg circle, .experiences .categories__item--active.b svg path,
+.experiences .categories__item--active.b svg circle {
+  stroke: var(--green-1);
 }
-@media screen and (max-width: 380px) {
-  .products .categories__item, .experiences .categories__item {
-    width: calc(50% - 7.5px);
-  }
+.products .categories__img, .experiences .categories__img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products .categories__img svg, .experiences .categories__img svg {
+  transform: scale(1.5);
 }
 .products .gallery, .experiences .gallery {
   padding: 60px 0 60px 0;
@@ -225,8 +214,11 @@
   margin-top: 20px;
 }
 .product-card__cart {
-  width: calc(100% - 55px);
-  background-color: var(--yellow);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
 }
 .product-card__favorite {
   display: inline-block;
