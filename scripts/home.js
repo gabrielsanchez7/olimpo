@@ -65,6 +65,40 @@ function getPromotions() {
   })
 }
 
+function selectCategory() {
+  const categories = document.querySelectorAll('.home .option')
+  Array.from(categories, it => {
+    it.addEventListener('click', e => {
+      const target = e.target
+      target.classList.add('option--active')
+
+      const sibs = getSiblings(target)
+      sibs.forEach(sib => sib.classList.remove('option--active'))
+
+      const content = target.getAttribute('data-option')
+      setTabContent(content)
+    })
+  })
+}
+
+function setTabContent(content) {
+  const contentToShow = document.querySelector(`[data-content="${content}"]`)
+  const contentToHide = getSiblings(contentToShow)
+
+  Array.from(contentToHide, content => {
+    content.style.opacity = '0'
+    setTimeout(() => {
+      content.style.display = 'none'
+      contentToShow.style.display = 'block'
+      setTimeout(() => {
+        contentToShow.style.opacity = '1'
+      }, 100)
+    }, 250)
+  })
+
+}
+
 window.onload = function() {
-  getPromotions()
+  selectCategory()
+  // getPromotions()
 }

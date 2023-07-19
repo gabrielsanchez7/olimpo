@@ -1,7 +1,88 @@
 .products, .experiences {
 
-  .banner img {
-    width: 100%;
+  .banner {
+    img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 620px) {
+      display: none;
+    }
+  }
+
+  .head {
+
+    &__mobile {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: var(--green-1);
+      
+      .icon-bag { font-size: 20px; }
+      
+    }
+
+    @media screen and (max-width: 620px) {
+      display: none;
+
+      &__mobile {
+        display: flex;
+      }
+    }
+    
+  }
+
+  .searcher {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    &__input {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--gray-2);
+      padding: 0 15px;
+      border-radius: 12px;
+      width: calc(100% - 60px);
+
+      i {
+        color: var(--gray-2);
+        font-size: 20px;
+      }
+      
+      input {
+        outline: none;
+        border: none;
+        appearance: none;
+        line-height: 48px;
+        font-size: 16px;
+
+        &::placeholder {
+          color: var(--gray-2);
+        }
+        
+      }
+
+    }
+    
+    .icon-filter {
+      border: 1px solid var(--gray-2);
+      min-width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      color: var(--green-1);
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 620px) {
+      display: flex;
+    }
+    
   }
 
   .olimpo__subtitle {
@@ -11,7 +92,7 @@
   .categories {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
     margin-bottom: 60px;
 
@@ -20,12 +101,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 5px;
       padding-bottom: 10px;
       border-bottom: 3px solid transparent;
 
       * { pointer-events: none; }
 
-      & > span {
+      .categories__label {
         font-size: 14px;
         color: var(--gray-2);
       }
@@ -34,97 +116,22 @@
         color: var(--green-1);
         border-bottom-color: var(--green-1);
         
-        span { color: inherit; }
-        
-        &:first-child {
-          svg path {
-            stroke: var(--green-1);
-            // fill: var(--green-1);
-          }
-        }
-
-        &:not(:first-child) {
-          svg path {
-            fill: var(--green-1);
-          }
-        }
-
-        &.b {
-          svg path,
-          svg circle {
-            stroke: var(--green-1);
-          }
-        }
+        .categories__label,
+        .categories__icon { color: inherit; }
         
       }
       
     }
 
-    &__img {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      svg { transform: scale(1.5); }
+    &__icon {
+      font-size: 24px;
+      color: var(--gray-2);
     }
     
-    // &__item {
-    //   width: 100%;
-    //   background-color: var(--gray-1);
-    //   padding: 40px 20px;
-    //   border-radius: 20px;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   align-items: center;
-    //   gap: 10px;
-    //   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-
-    //   * { pointer-events: none; }
-
-    //   i {
-    //     font-size: 30px;
-    //     color: var(--gray-2);
-    //   }
-
-    //   span {
-    //     font-size: 16px;
-    //     color: var(--gray-3);
-    //   }
-
-    //   &--active {
-    //     background-color: var(--yellow);
-    //     color: var(--green-1);
-
-    //     i, span { color: inherit; }
-        
-    //   }
-      
-    // }
-
-    // @media screen and (max-width: 1024px) {
-    //   flex-wrap: wrap;
-    //   justify-content: start;
-
-    //   &__item {
-    //     width: calc(20% - 12px);
-    //   }
-      
-    // }
-
-    // @media screen and (max-width: 680px) {
-    //   &__item { width: calc(25% - 45px / 4); }
-    // }
-
-    // @media screen and (max-width: 530px) {
-    //   &__item { width: calc(100% / 3 - 10px); }
-    // }
-
-    // @media screen and (max-width: 380px) {
-    //   &__item { width: calc(50% - 15px / 2); }
-    // }
+    @media screen and (max-width: 620px) {
+      justify-content: center;
+      margin-bottom: 0;
+    }
 
   }
 
@@ -177,9 +184,9 @@
         width: calc(50% - 15px / 2);
       }
 
-      @media screen and (max-width: 580px) {
-        width: 100%;
-      }
+      // @media screen and (max-width: 580px) {
+      //   width: 100%;
+      // }
       
     }
     
@@ -280,16 +287,20 @@
     color: var(--gray-3);
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
+    color: var(--green-1);
+    font-weight: 500;
+    font-size: 18px;
   }
 
   &__name {
     font-size: 18px;
-    font-weight: 500;
     line-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
+    color: var(--gray-3);
   }
 
   &__price {
@@ -297,6 +308,10 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img { width: 26px; }
   }
 
   &__old-price {
@@ -308,19 +323,17 @@
 
   &__actions {
     display: flex;
+    justify-content: space-between;
     align-items: normal;
     gap: 10px;
     margin-top: 20px;
   }
 
   &__cart {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-    // width: calc(100% - 55px);
-    // background-color: var(--yellow);
+    i {
+      color: var(--green-1);
+      font-size: 28px;
+    }
   }
 
   &__favorite {
