@@ -1,5 +1,5 @@
 .home {
-  background-color: var(--gray-1);
+  background-color: white;
 }
 .home .banner__carousel {
   background-color: var(--gray-1);
@@ -70,6 +70,7 @@
   text-transform: uppercase;
   padding-bottom: 10px;
   z-index: 1;
+  height: 76px;
 }
 .home .options .option * {
   pointer-events: none;
@@ -81,6 +82,9 @@
   color: var(--green-1);
   border-bottom-color: var(--green-1);
 }
+.home .content {
+  background-color: var(--gray-1);
+}
 .home .option__content {
   transition: 0.25s;
   display: none;
@@ -89,6 +93,305 @@
 .home .option__content.level {
   display: block;
   opacity: 1;
+}
+.home .level__gray {
+  padding: 40px 0;
+  background-color: var(--gray-1);
+}
+.home .level__record {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+.home .level__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+.home .level__status > img {
+  display: block;
+  background-color: #BCDFBD;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 7px;
+  border: 6px solid white;
+}
+@media screen and (max-width: 500px) {
+  .home .level__status > img {
+    width: 80px;
+    height: 80px;
+  }
+}
+.home .level__libras {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.home .level__name {
+  font-size: 24px;
+}
+.home .level__name span:first-child {
+  color: var(--gray-3);
+}
+.home .level__name span:last-child {
+  color: var(--green-1);
+  font-weight: bold;
+}
+.home .level__libras-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+.home .level__libras-count img {
+  width: 30px;
+}
+.home .level__progress span:first-child {
+  font-size: 14px;
+  color: var(--gray-2);
+}
+.home .level__progress span:last-child {
+  display: block;
+  width: 100%;
+  min-width: 250px;
+  height: 20px;
+  background-color: var(--green-3);
+  margin-top: 3px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+}
+.home .level__info {
+  text-align: center;
+}
+.home .level__info p:first-child {
+  color: var(--green-1);
+  font-size: 20px;
+  font-weight: 500;
+}
+.home .level__works {
+  padding: 40px 0;
+}
+.home .level .olimpo__subtitle {
+  font-weight: 500;
+}
+.home .level__steps {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 680px) {
+  .home .level__steps {
+    flex-wrap: wrap;
+  }
+}
+.home .level__step {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.home .level__step-number {
+  color: var(--green-1);
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+}
+.home .level__step-desc {
+  text-align: center;
+  padding: 0 30px;
+}
+.home .level__step-desc b {
+  font-weight: 500;
+}
+@media screen and (max-width: 680px) {
+  .home .level__step {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 460px) {
+  .home .level__step {
+    width: 100%;
+  }
+}
+.home .level__accumulate {
+  margin: 20px 0 60px 0;
+}
+.home .level__accumulate > p {
+  text-align: center;
+  margin-top: 30px;
+}
+.home .level__conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 30px;
+}
+.home .level__condition {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 60px;
+  background-color: var(--gray-1);
+  border-radius: 30px;
+  width: 550px;
+  max-width: 100%;
+  padding: 10px 20px;
+}
+.home .level__condition span {
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+}
+.home .level__condition span:last-child {
+  background-color: var(--green-1);
+  font-size: 14px;
+  color: white;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  min-width: 142px;
+}
+.home .level__condition span:last-child img {
+  width: 20px;
+}
+.home .level__benefits {
+  background-color: var(--gray-1);
+  padding: 60px 0 100px 0;
+  text-align: center;
+}
+.home .level__benefits .olimpo__subtitle {
+  margin-bottom: 30px;
+}
+.home .level__benefits img {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 30px;
+}
+.home .gift {
+  padding-bottom: 60px;
+}
+.home .gift__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.home .gift__option {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+  height: 82px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.home .gift__option span {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+@media screen and (max-width: 620px) {
+  .home .gift__option {
+    max-width: unset;
+  }
+}
+.home .gift__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green-3);
+}
+.home .gift__image img {
+  width: 100px;
+}
+.home .gift__ask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid var(--green-1);
+  border-radius: 30px;
+  line-height: 50px;
+  padding: 0 20px;
+  width: 100%;
+  font-size: 16px;
+  color: var(--green-1);
+}
+.home .gift__ask .icon-ask {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--green-1);
+  border-radius: 50%;
+}
+.home .history {
+  padding: 40px 0 60px 0;
+}
+.home .history > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+.home .history__table {
+  border-spacing: 0 10px;
+  max-width: 100%;
+}
+.home .history__head, .home .history__body {
+  height: 50px;
+  margin: 5px 0;
+}
+.home .history__head th, .home .history__head td, .home .history__body th, .home .history__body td {
+  text-align: left;
+}
+.home .history__head th:first-child, .home .history__head td:first-child, .home .history__body th:first-child, .home .history__body td:first-child {
+  border-radius: 25px 0 0 25px;
+  width: 60px;
+  text-align: center;
+}
+.home .history__head th:first-child button, .home .history__head td:first-child button, .home .history__body th:first-child button, .home .history__body td:first-child button {
+  color: var(--green-1);
+}
+.home .history__head th:last-child, .home .history__head td:last-child, .home .history__body th:last-child, .home .history__body td:last-child {
+  border-radius: 0 25px 25px 0;
+}
+.home .history__head th, .home .history__body th {
+  background-color: var(--green-1);
+  color: white;
+  font-weight: 500;
+}
+.home .history__head td, .home .history__body td {
+  background-color: white;
 }
 
 /*# sourceMappingURL=home.css.map */
