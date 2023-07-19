@@ -220,7 +220,7 @@
   opacity: 0;
   transition: 0.25s;
 }
-.product-card__preview button {
+.product-card__preview .product-card__open {
   color: var(--green-1);
   background-color: var(--yellow);
   display: block;

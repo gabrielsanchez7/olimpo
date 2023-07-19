@@ -1,9 +1,38 @@
 .bonus {
   padding-top: 60px;
 }
+@media screen and (max-width: 620px) {
+  .bonus {
+    padding-top: 10px;
+  }
+}
 .bonus .head .olimpo__back {
   display: inline-block;
   margin-bottom: 30px;
+}
+.bonus .head__mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--green-1);
+}
+.bonus .head__mobile .icon-filter {
+  font-size: 20px;
+  color: var(--green-1);
+  border: 1px solid var(--gray-2);
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 620px) {
+  .bonus .head {
+    display: none;
+  }
+  .bonus .head__mobile {
+    display: flex;
+  }
 }
 .bonus__options {
   display: flex;
@@ -15,6 +44,11 @@
 @media screen and (max-width: 800px) {
   .bonus__options {
     gap: 30px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .bonus__options {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -140,11 +174,6 @@
     width: calc(50% - 7.5px);
   }
 }
-@media screen and (max-width: 415px) {
-  .bonus-card {
-    width: 100%;
-  }
-}
 
 .bonus-detail {
   padding-top: 60px;
@@ -157,6 +186,12 @@
   margin-top: 50px;
   padding-bottom: 100px;
 }
+@media screen and (max-width: 650px) {
+  .bonus-detail__preview {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .bonus-detail__image {
   width: 35%;
   background-color: white;
@@ -167,12 +202,25 @@
   justify-content: center;
   padding: 40px;
 }
+.bonus-detail__image img {
+  width: 100%;
+}
+@media screen and (max-width: 650px) {
+  .bonus-detail__image {
+    width: 100%;
+  }
+}
 .bonus-detail__description {
   width: 65%;
   background-color: white;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 40px;
   padding: 30px;
+}
+@media screen and (max-width: 650px) {
+  .bonus-detail__description {
+    width: 100%;
+  }
 }
 .bonus-detail__title {
   color: var(--green-1);

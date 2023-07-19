@@ -107,7 +107,7 @@
     display: none;
     opacity: 0;
 
-    &.level {
+    &.gift {
       display: block;
       opacity: 1;
     }
@@ -404,6 +404,8 @@
       line-height: 50px;
       padding: 0 20px;
       width: 100%;
+      max-width: 300px;
+      margin: auto;
       font-size: 16px;
       color: var(--green-1);
 

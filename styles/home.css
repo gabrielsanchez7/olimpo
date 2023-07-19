@@ -90,7 +90,7 @@
   display: none;
   opacity: 0;
 }
-.home .option__content.level {
+.home .option__content.gift {
   display: block;
   opacity: 1;
 }
@@ -342,6 +342,8 @@
   line-height: 50px;
   padding: 0 20px;
   width: 100%;
+  max-width: 300px;
+  margin: auto;
   font-size: 16px;
   color: var(--green-1);
 }
