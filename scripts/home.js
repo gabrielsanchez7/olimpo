@@ -30,7 +30,9 @@ function startCarousel() {
 
 function getPromotions() {
   const container = document.querySelector('.promotions .glide__slides')
+  const containerViewed = document.querySelector('.viewed__list')
   container.innerHTML = ''
+  containerViewed.innerHTML = ''
 
   Promise.all([
     fetch('./product-card.html'),
@@ -43,7 +45,7 @@ function getPromotions() {
     const html = data[0]
     const products = data[1].slice(0, 8)
 
-    products.forEach(it => {
+    products.forEach((it, index) => {
       const li = document.createElement('li')
       li.classList.add('glide__slide')
 
@@ -58,10 +60,14 @@ function getPromotions() {
 
       div.outerHTML = replaced
       container.appendChild(li)
+
+      if(index < 4) {
+        containerViewed.appendChild(li)
+      }
     })
 
     startCarousel()
-    openProductDetail()
+    // openProductDetail()
   })
 }
 
@@ -99,6 +105,6 @@ function setTabContent(content) {
 }
 
 window.onload = function() {
-  selectCategory()
-  // getPromotions()
+  // selectCategory()
+  getPromotions()
 }

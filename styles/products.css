@@ -263,7 +263,7 @@
   gap: 5px;
 }
 .product-card__price img {
-  width: 26px;
+  width: 26px !important;
 }
 .product-card__old-price {
   color: var(--gray-2);
