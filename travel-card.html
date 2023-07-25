@@ -4,13 +4,14 @@
   </div>
   <div class="travel-card__detail">
     <div>
-      <div class="olimpo__flex">
-        <p class="travel-card__location">{{from}} - {{destination}}</p>
-        <p class="travel-card__price"><img src="./resources/images/coin.svg"/>{{price}}</p>
-      </div>
+      <p class="travel-card__location">{{from}} - {{destination}}</p>
       <p class="travel-card__date">{{startDate}} - {{endDate}}</p>
       <p class="travel-card__fly-time">{{duration}}</p>
     </div>
-    <button type="button" class="travel-card__explore button button--primary">Ver vuelo</button>
+    <div class="travel-card__actions">
+      <p class="travel-card__price"><img src="./resources/images/coin.svg"/>{{price}}</p>
+      <!-- <button type="button" class="travel-card__explore button button--primary">Ver vuelo</button> -->
+      <a class="travel-card__cart" href="./cart.html"><i class="icon-cart-plus"></i></a>
+    </div>
   </div>
 </div>

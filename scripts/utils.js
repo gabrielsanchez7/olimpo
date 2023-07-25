@@ -84,3 +84,30 @@ function openProductDetail() {
     link.style.display = 'block'
   })
 }
+
+function handleAccordion() {
+  const accordions = document.querySelectorAll('.accordion__handler')
+  Array.from(accordions, accordion => {
+    accordion.addEventListener('click', e => {
+      const target = e.target
+      const container = target.closest('.accordion')
+      const content = container.querySelector('.accordion__content')
+      const contentHeight = content.querySelector('div').scrollHeight
+      const isActive = container.classList.contains('accordion--active')
+      const icon = container.querySelector('.fa-solid')
+
+      if(!isActive) {
+        container.classList.add('accordion--active')
+        content.style.height = `${contentHeight}px`
+        icon.classList.remove('fa-plus')
+        icon.classList.add('fa-minus')
+      } else {
+        container.classList.remove('accordion--active')
+        content.style.removeProperty('height')
+        icon.classList.remove('fa-minus')
+        icon.classList.add('fa-plus')
+      }
+
+    })
+  })
+}

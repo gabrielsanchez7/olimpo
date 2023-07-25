@@ -1,0 +1,54 @@
+.ask, .tyc {
+  padding-bottom: 100px;
+
+  .head {
+    padding-top: 60px;
+    margin-bottom: 60px;
+
+    .olimpo__back {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .olimpo__subtitle {
+      font-size: 34px;
+    }
+
+    &__desc {
+      display: block;
+      margin-top: 30px;
+
+      b { font-weight: 500; }
+      
+    }
+
+    @media screen and (max-width: 1080px) {
+      .olimpo__subtitle { font-size: 28px; }
+    }
+
+    @media screen and (max-width: 550px) {
+      .olimpo__subtitle { font-size: 24px; }
+    }
+
+  }
+
+  .accordion {
+    max-width: unset;
+  }
+
+  .tyc__subtitle {
+    color: var(--green-1);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .tyc__desc {
+    margin-bottom: 10px;
+
+    & + .tyc__subtitle {
+      margin-top: 40px;
+    }
+  }
+  
+}

@@ -4,7 +4,6 @@ importScript('./scripts/flatpickr.js')
 importScript('./scripts/utils.js')
 
 const url = window.location.pathname
-console.log(url)
 
 if(url.includes('index') || url == '/') {
   importScript('./scripts/home.js')

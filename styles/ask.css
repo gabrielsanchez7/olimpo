@@ -1,0 +1,48 @@
+.ask, .tyc {
+  padding-bottom: 100px;
+}
+.ask .head, .tyc .head {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.ask .head .olimpo__back, .tyc .head .olimpo__back {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.ask .head .olimpo__subtitle, .tyc .head .olimpo__subtitle {
+  font-size: 34px;
+}
+.ask .head__desc, .tyc .head__desc {
+  display: block;
+  margin-top: 30px;
+}
+.ask .head__desc b, .tyc .head__desc b {
+  font-weight: 500;
+}
+@media screen and (max-width: 1080px) {
+  .ask .head .olimpo__subtitle, .tyc .head .olimpo__subtitle {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ask .head .olimpo__subtitle, .tyc .head .olimpo__subtitle {
+    font-size: 24px;
+  }
+}
+.ask .accordion, .tyc .accordion {
+  max-width: unset;
+}
+.ask .tyc__subtitle, .tyc .tyc__subtitle {
+  color: var(--green-1);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.ask .tyc__desc, .tyc .tyc__desc {
+  margin-bottom: 10px;
+}
+.ask .tyc__desc + .tyc__subtitle, .tyc .tyc__desc + .tyc__subtitle {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=ask.css.map */

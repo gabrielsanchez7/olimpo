@@ -311,7 +311,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    img { width: 26px !important; }
+    img { width: 20px !important; }
   }
 
   &__old-price {
@@ -330,10 +330,19 @@
   }
 
   &__cart {
+    border: 1px solid var(--green-1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     i {
       color: var(--green-1);
-      font-size: 28px;
+      font-size: 20px;
     }
+
   }
 
   &__favorite {

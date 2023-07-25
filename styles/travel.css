@@ -1,6 +1,9 @@
 .travel {
   background-color: var(--gray-1);
 }
+.travel .banner {
+  width: 100%;
+}
 .travel .seeker {
   display: block;
   width: 100%;
@@ -205,10 +208,18 @@
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+.travel .travel-card__date {
+  width: 100%;
+  text-align: center;
 }
 .travel .travel-card__fly-time {
   color: var(--gray-3);
   line-height: 28px;
+  width: 100%;
+  text-align: center;
 }
 .travel .travel-card__price {
   display: flex;
@@ -219,7 +230,25 @@
   color: var(--gray-3);
 }
 .travel .travel-card__price img {
-  width: 25px;
+  width: 20px;
+}
+.travel .travel-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.travel .travel-card__cart {
+  border: 1px solid var(--green-1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.travel .travel-card__cart i {
+  color: var(--green-1);
+  font-size: 20px;
 }
 @media screen and (max-width: 920px) {
   .travel .travel-card {

@@ -389,3 +389,60 @@ button {
   }
   
 }
+
+.accordion {
+  max-width: 650px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid var(--gray-1);
+  border-radius: 28px;
+  overflow: hidden;
+
+  &--active .accordion__handler {
+    background-color: var(--green-1);
+    color: var(--yellow);
+    font-weight: 500;
+
+    i { color: var(--yellow); }
+  }
+
+  &__handler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    transition: 0.25s;
+    text-align: left;
+    background-color: var(--gray-1);
+
+    * { pointer-events: none; }
+    
+    i { color: var(--green-1); }
+    
+  }
+
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s;
+    
+    div {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    ol {
+      padding-left: 30px;
+    }
+    
+  }
+  
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

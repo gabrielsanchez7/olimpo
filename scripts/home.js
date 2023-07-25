@@ -107,4 +107,5 @@ function setTabContent(content) {
 window.onload = function() {
   // selectCategory()
   getPromotions()
+  handleAccordion()
 }
