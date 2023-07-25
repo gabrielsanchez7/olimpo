@@ -175,12 +175,25 @@
   gap: 15px;
   margin-top: 40px;
 }
+.travel .popular .travel-card {
+  width: calc(25% - 11.25px);
+}
+@media screen and (max-width: 1200px) {
+  .travel .popular .travel-card {
+    width: calc(33.3333333333% - 10px);
+  }
+}
+@media screen and (max-width: 850px) {
+  .travel .popular .travel-card {
+    width: calc(50% - 7.5px);
+  }
+}
 .travel .travel-card {
-  width: calc(50% - 7.5px);
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .travel .travel-card .olimpo__flex {
@@ -197,7 +210,6 @@
   justify-content: space-between;
   align-items: start;
   gap: 10px;
-  width: calc(100% - 160px);
   padding: 20px;
 }
 .travel .travel-card__detail > div {

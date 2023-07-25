@@ -74,34 +74,39 @@
 .products .categories, .experiences .categories {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
+  justify-content: center;
+  gap: 15px;
   margin-bottom: 60px;
 }
 .products .categories__item, .experiences .categories__item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 5px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid transparent;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--gray-1);
+}
+.products .categories__item i, .experiences .categories__item i {
+  font-size: 26px;
+  color: var(--gray-2);
+}
+.products .categories__item span, .experiences .categories__item span {
+  color: var(--gray-3);
+  font-size: 12px;
 }
 .products .categories__item *, .experiences .categories__item * {
   pointer-events: none;
 }
-.products .categories__item .categories__label, .experiences .categories__item .categories__label {
-  font-size: 14px;
-  color: var(--gray-2);
-}
 .products .categories__item--active, .experiences .categories__item--active {
-  color: var(--green-1);
-  border-bottom-color: var(--green-1);
+  background-color: var(--yellow);
 }
 .products .categories__item--active .categories__label,
 .products .categories__item--active .categories__icon, .experiences .categories__item--active .categories__label,
 .experiences .categories__item--active .categories__icon {
-  color: inherit;
+  color: var(--green-1);
 }
 .products .categories__icon, .experiences .categories__icon {
   font-size: 24px;

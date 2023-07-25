@@ -92,33 +92,37 @@
   .categories {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
+    justify-content: center;
+    gap: 15px;
     margin-bottom: 60px;
 
     &__item {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
-      gap: 5px;
-      padding-bottom: 10px;
-      border-bottom: 3px solid transparent;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: var(--gray-1);
 
-      * { pointer-events: none; }
-
-      .categories__label {
-        font-size: 14px;
+      i {
+        font-size: 26px;
         color: var(--gray-2);
       }
 
+      span {
+        color: var(--gray-3);
+        font-size: 12px;
+      }
+
+      * { pointer-events: none; }
+
       &--active {
-        color: var(--green-1);
-        border-bottom-color: var(--green-1);
-        
+        background-color: var(--yellow);
         .categories__label,
-        .categories__icon { color: inherit; }
-        
+        .categories__icon { color: var(--green-1); }
       }
       
     }
