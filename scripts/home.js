@@ -120,5 +120,5 @@ window.onload = function() {
   selectCategory()
   getPromotions()
   handleAccordion()
-  welcome()
+  // welcome()
 }
