@@ -72,22 +72,24 @@
   margin: 60px 0 40px 0;
 }
 .products .categories, .experiences .categories {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 60px;
+  white-space: nowrap;
+  padding-bottom: 60px;
+  overflow: auto;
+  text-align: center;
 }
 .products .categories__item, .experiences .categories__item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 4px;
-  height: 100px;
-  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
   border-radius: 50%;
   background-color: var(--gray-1);
+}
+.products .categories__item:not(:last-child), .experiences .categories__item:not(:last-child) {
+  margin-right: 10px;
 }
 .products .categories__item i, .experiences .categories__item i {
   font-size: 26px;
@@ -115,7 +117,7 @@
 @media screen and (max-width: 620px) {
   .products .categories, .experiences .categories {
     justify-content: center;
-    margin-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 .products .gallery, .experiences .gallery {
@@ -252,6 +254,7 @@
 .product-card__name {
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

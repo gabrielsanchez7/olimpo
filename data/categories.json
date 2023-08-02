@@ -1,0 +1,72 @@
+[
+  {
+    "icon": "icon-electro",
+    "name": "Electro",
+    "module": "products"
+  },
+  {
+    "icon": "icon-tech",
+    "name": "Tecnología",
+    "module": "products"
+  },
+  {
+    "icon": "icon-house",
+    "name": "Hogar",
+    "module": "products"
+  },
+  {
+    "icon": "icon-sport",
+    "name": "Deporte",
+    "module": "products"
+  },
+  {
+    "icon": "icon-gift",
+    "name": "Giftcards",
+    "module": "products"
+  },
+  {
+    "icon": "icon-all-games",
+    "name": "Todos los juegos",
+    "module": "bonus"
+  },
+  {
+    "icon": "icon-sport-bet",
+    "name": "Apuestas deportivas",
+    "module": "bonus"
+  },
+  {
+    "icon": "icon-live-casino",
+    "name": "Casino en vivo",
+    "module": "bonus"
+  },
+  {
+    "icon": "icon-casino",
+    "name": "Casino",
+    "module": "bonus"
+  },
+  {
+    "icon": "icon-virtual-sport",
+    "name": "Deportes virtuales",
+    "module": "bonus"
+  },
+  {
+    "icon": "icon-travel",
+    "name": "Viajes",
+    "module": "experiences"
+  },
+  {
+    "icon": "icon-gift",
+    "name": "Suscripciones",
+    "module": "experiences"
+  },
+  {
+    "icon": "icon-stadium",
+    "name": "Estadio",
+    "module": "experiences"
+  },
+  {
+    "icon": "icon-music",
+    "name": "Conciertos",
+    "module": "experiences"
+  }
+]

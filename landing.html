@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Olimpo</title>
+	<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./styles/main.css">
+	<script src="./scripts/load-scripts.js"></script>
+</head>
+
+<body>
+
+	<header></header>
+
+	<main class="home">
+		
+		<div class="banner__carousel glide">
+			<div class="glide__track" data-glide-el="track">
+				<ul class="glide__slides">
+					<li class="glide__slide">
+						<img src="./resources/images/banners/slide-home-1.png">
+					</li>
+					<li class="glide__slide">
+						<img src="./resources/images/banners/slide-home-2.png">
+					</li>
+				</ul>
+			</div>
+			<div class="glide__bullets" data-glide-el="controls[nav]">
+				<button class="glide__bullet" data-glide-dir="=0"></button>
+				<button class="glide__bullet" data-glide-dir="=1"></button>
+			</div>
+		</div>
+
+		<div class="categories">
+			<div class="container">
+				<h2 class="olimpo__subtitle olimpo__subtitle--center">Nuestras categor&iacute;as</h2>
+				<div class="categories__list">
+					<a class="category" href="./products.html">
+						<i class="icon-house"></i>
+						<span>Hogar</span>
+					</a>
+					<a class="category" href="./products.html">
+						<i class="icon-electro"></i>
+						<span>Electro</span>
+					</a>
+					<a class="category" href="./products.html">
+						<i class="icon-tech"></i>
+						<span>Tecnolog&iacute;a</span>
+					</a>
+					<a class="category" href="./products.html">
+						<i class="icon-gift"></i>
+						<span>Vales</span>
+					</a>
+					<a class="category" href="./products.html">
+						<i class="icon-sport"></i>
+						<span>Deporte</span>
+					</a>
+					<a class="category" href="./products.html">
+						<i class="icon-plane"></i>
+						<span>Vuelos</span>
+					</a>
+					<a class="category" href="./products.html">
+						<i class="icon-stadium"></i>
+						<span>Estadios</span>
+					</a>
+					<a class="category" href="./products.html">
+						<i class="icon-music"></i>
+						<span>Conciertos</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="promotions">
+			<div class="container">
+				<h2 class="olimpo__subtitle olimpo__subtitle--center">&iexcl;Aprovecha las promociones!</h2>
+
+				<div class="promotions__carousel glide">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+							<li class="glide__slide">
+								<product-card></product-card>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="olimpo__center">
+					<a href="./products.html" class="promotions__more button">Ver m&aacute;s promociones</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="viewed">
+			<div class="container">
+				<h2 class="olimpo__subtitle olimpo__subtitle--center">&iexcl;Los m&aacute;s vistos!</h2>
+
+				<ul class="viewed__list">
+					<product-card></product-card>
+					<product-card></product-card>
+					<product-card></product-card>
+					<product-card></product-card>
+				</ul>
+
+				<div class="olimpo__center">
+					<a href="./products.html" class="promotions__more button">Ver todos los productos</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="tutorial">
+			<div class="container">
+				<h2 class="olimpo__subtitle olimpo__subtitle--center">Preguntas frecuentes</h2>
+				<div class="accordion">
+					<button type="button" class="accordion__handler">
+						<span>&iquest;C&oacute;mo utilizar mis bonos?</span>
+						<i class="fa-solid fa-plus"></i>
+					</button>
+					<div class="accordion__content">
+						<div>
+							<p>Los bonos puedes ser utilizados en los juegos de casino y algunos de casino en vivo y siempre se debe tener en cuenta que los juegos tienen una contribución al roll over distinta.</p>
+							<p>El bono es parte de tu saldo, cuando realizas una apuesta, primero se utiliza el efectivo y luego el bono.</p>
+							<p>Ejemplo: tienes S/60 en efectivo y S/40 en Bonos, tu saldo total es de S/100. Si realizas una apuesta S/80 esta consiste en tus S/60 en efectivo y S/20 en bonos, quiere decir que, el premio que recibas al momento de ganar se dividirá de la misma forma. Esta misma lógica se aplica para la contribución al rollover y el monto que puedes llegar a convertir.</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion">
+					<button type="button" class="accordion__handler">
+						<span>&iquest;C&oacute;mo ver mis movimientos de recargas y retiros?</span>
+						<i class="fa-solid fa-plus"></i>
+					</button>
+					<div class="accordion__content">
+						<div><p>Dentro del menú de usuario en la sección de “historial” podrás ver dos opciones en la mano superior, selecciona la de “depósitos y retiradas” y podrás ver tus recargas y retiros.</p></div>
+					</div>
+				</div>
+				<div class="accordion">
+					<button type="button" class="accordion__handler">
+						<span>&iquest;Cu&aacute;nto demora la revisi&oacute;n de mi documento de identidad?</span>
+						<i class="fa-solid fa-plus"></i>
+					</button>
+					<div class="accordion__content">
+						<div><p>Tu seguridad es muy importante para nosotros, por tal motivo, el proceso de validación es fundamental para comprobar tu identidad y evitar futuros inconvenientes relacionados a la falsificación de identidad. Debido a esto, nuestro proceso de validación puede demorar hasta 2 horas hábiles; sin embargo, el proceso es único y una vez ya validado tu documento de identidad, podrás proceder con tus retiros libremente y cobrar tan rápido como un rayo⚡</p></div>
+					</div>
+				</div>
+				<a class="go-ask" href="./ask.html">Ver todas las preguntas frecuentes <i class="icon-ask"></i></a>
+			</div>
+		</div>
+
+		<div class="links container">
+			<div class="links__item">
+				<img src="./resources/images/link-1.png">
+				<a href="./experiences.html" class="button button--primary">Vive experiencias</a>
+			</div>
+			<div class="links__item">
+				<img src="./resources/images/link-2.png">
+				<a href="./travel.html" class="button button--primary">Canjear viajes</a>
+			</div>
+		</div>
+		
+		<div id="welcome-modal" class="modal">
+			<div class="modal__content">
+				<div class="modal__icon">
+					<img src="./resources/images/logo.png" alt="Olimpo">
+				</div>
+				<div class="modal__main">
+					<p class="modal__title">&iexcl;Bienvenido al Programa lealtad de los dioses!</p>
+					<p class="modal__text">Solo por hoy entre las 5:00pm y 10:00 pm podr&aacute;s canjear un m&aacute;ximo de 3,500 libras por productos, experiencias y bonos.</p>
+					<div class="modal__timer">
+						<p class="modal__timer-sub">Tiempo restante</p>
+						<div class="modal__time">
+							<div class="modal__time-box" data-type="hour">
+								<p>03</p>
+								<span>Horas</span>
+							</div>
+							<div class="modal__time-box" data-type="minute">
+								<p>10</p>
+								<span>Minutos</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal__actions">
+					<a href="javascript:void(0)" class="modal__action modal__action--secondary">Cancelar</a>
+					<a href="./products.html" class="modal__action modal__action--primary">Ir a canjear</a>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+
+	<footer></footer>
+
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

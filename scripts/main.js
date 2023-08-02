@@ -5,8 +5,10 @@ importScript('./scripts/utils.js')
 
 const url = window.location.pathname
 
-if(url.includes('index') || url == '/') {
+if(url.includes('index') || url.includes('landing') || url == '/') {
   importScript('./scripts/home.js')
+} else if(url.includes('catalogue')) {
+  importScript('./scripts/catalogue.js')
 } else if(url.includes('bonus')) {
   importScript('./scripts/bonus.js')
 } else if(url.includes('travel')) {

@@ -41,8 +41,16 @@ function random() {
  */
 function handleModal(element, action) {
   const content = element.querySelector('.modal__content')
-  const buttonClose = element.querySelector('.modal__close')
+  const buttonClose = element.querySelector('.modal__action--secondary')
 
+  const closeFunction = () => {
+    content.removeAttribute('style')
+    setTimeout(() => {
+      element.style.removeProperty('opacity')
+      setTimeout(() => element.removeAttribute('style'), 250)
+    }, 50)
+  }
+  
   if(action == 'open') {
     element.style.display = 'flex'
     setTimeout(() => {
@@ -51,14 +59,6 @@ function handleModal(element, action) {
     })
   } else {
     closeFunction()
-  }
-
-  const closeFunction = () => {
-    content.removeAttribute('style')
-    setTimeout(() => {
-      element.style.removeProperty('opacity')
-      setTimeout(() => element.removeAttribute('style'), 250)
-    }, 50)
   }
 
   buttonClose.addEventListener('click', () => closeFunction())
@@ -110,4 +110,36 @@ function handleAccordion() {
 
     })
   })
+}
+
+function startTimer(container) {
+  const timerHour = container.querySelector('.modal__time-box[data-type="hour"] p')
+  const timerMin = container.querySelector('.modal__time-box[data-type="minute"] p')
+
+  const maxMin = 59
+
+  let tempHour = 5
+  let tempMin = 0
+
+  // start time
+  timerHour.innerHTML = tempHour.toString().padStart(2, '0')
+  timerMin.innerHTML = tempMin.toString().padStart(2, '0')
+
+  const min = 0
+
+  const interval = setInterval(() => {
+    if(tempMin == 0) { tempHour-- }
+
+    if(tempHour >= 0 && tempMin >= 0) {
+      tempMin--
+      if(tempMin < 0) { tempMin = maxMin }
+    }
+
+    timerHour.innerHTML = tempHour.toString().padStart(2, '0')
+    timerMin.innerHTML = tempMin.toString().padStart(2, '0')
+
+    if(tempHour == min && tempMin == min) {
+      clearInterval(interval)
+    }
+  }, 60000)
 }

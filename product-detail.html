@@ -83,12 +83,25 @@
 						</tr>
 					</table>
 				</div>
-				<a class="content__cart button button--primary" href="./cart.html">
+				<a class="content__cart button button--primary" href="javascript:void(0)">
 					<i class="icon-cart-plus"></i>
 					<span>Agregar al carrito</span>
 				</a>
 			</div>
 			
+		</div>
+
+		<div id="modal-error" class="modal">
+			<div class="modal__content">
+				<div class="modal__icon">
+					<img src="./resources/images/error.png" alt="Olimpo">
+				</div>
+				<div class="modal__error-msg">No cuentas con suficientes libras para completar la compra.</div>
+				<div class="modal__actions">
+					<a href="./cart.html" class="modal__action modal__action--primary">Ir al carrito <i class="icon-cart"></i></a>
+					<a href="javascript:void(0)" class="modal__action modal__action--secondary">Sigue explorando <i class="fa-solid fa-arrow-right"></i></a>
+				</div>
+			</div>
 		</div>
 		
   </main>
@@ -96,6 +109,16 @@
 	<footer></footer>
 
 	<script src="./scripts/main.js"></script>
+	<script type="text/javascript">
+		window.onload = () => {
+			const btn = document.querySelector('.content__cart')
+			const errorModal = document.querySelector('#modal-error')
+
+			btn.addEventListener('click', _ => {
+				handleModal(errorModal, 'open')
+			})
+		}
+	</script>
 
 </body>
 

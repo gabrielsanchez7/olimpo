@@ -90,22 +90,25 @@
   }
 
   .categories {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 60px;
+    white-space: nowrap;
+    padding-bottom: 60px;
+    overflow: auto;
+    text-align: center;
 
     &__item {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       gap: 4px;
-      height: 100px;
-      width: 100px;
+      min-height: 100px;
+      min-width: 100px;
       border-radius: 50%;
       background-color: var(--gray-1);
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
 
       i {
         font-size: 26px;
@@ -134,7 +137,7 @@
     
     @media screen and (max-width: 620px) {
       justify-content: center;
-      margin-bottom: 0;
+      padding-bottom: 20px;
     }
 
   }
@@ -300,6 +303,7 @@
   &__name {
     font-size: 18px;
     line-height: 24px;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
