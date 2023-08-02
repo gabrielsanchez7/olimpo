@@ -268,7 +268,7 @@
     }
     
     &__accumulate {
-      margin: 20px 0 60px 0;
+      margin-top: 20px;
       
       & > p {
         text-align: center;
@@ -292,7 +292,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-      height: 60px;
+      min-height: 60px;
       background-color: white;
       border-radius: 30px;
       width: 550px;
@@ -346,6 +346,12 @@
       gap: 15px;
       padding: 40px;
       flex-wrap: wrap;
+
+      @media screen and (max-width: 500px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
     }
 
     &__option {
@@ -409,6 +415,10 @@
 
       @media screen and (max-width: 850px) {
         max-width: calc(100% - 80px);
+      }
+
+      @media screen and (max-width: 500px) {
+        max-width: 100%;
       }
       
     }

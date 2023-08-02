@@ -303,4 +303,29 @@ button {
   margin-bottom: 10px;
 }
 
+.searcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--gray-2);
+  border-radius: 12px;
+  margin-top: 24px;
+  padding: 0 15px;
+}
+.searcher__icon {
+  font-size: 18px;
+  color: var(--gray-2);
+}
+.searcher__input {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 14px 0;
+  width: 100%;
+  outline: none;
+}
+.searcher__input::placeholder {
+  color: var(--gray-2);
+}
+
 /*# sourceMappingURL=global.css.map */
