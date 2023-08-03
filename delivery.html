@@ -19,24 +19,28 @@
     <div class="timeline">
 			<div class="container">
 				<div class="timeline__step timeline__step--passed">
-					<i class="timeline__icon fa-solid fa-cart-shopping"></i>
+					<!-- <i class="timeline__icon fa-solid fa-cart-shopping"></i> -->
 					<div class="timeline__dot">
-						<i class="timeline__done fa-solid fa-check"></i>
+						<!-- <i class="timeline__done fa-solid fa-check"></i> -->
+						<span>1</span>
 						<span class="timeline__dot--before"></span>
 					</div>
 					<p class="timeline__name">Carrito</p>
 				</div>
 				<div class="timeline__step timeline__step--active">
-					<i class="timeline__icon fa-solid fa-truck-ramp-box"></i>
+					<!-- <i class="timeline__icon fa-solid fa-truck-ramp-box"></i> -->
 					<div class="timeline__dot">
-						<i class="timeline__pause fa-solid fa-pause"></i>
+						<!-- <i class="timeline__pause fa-solid fa-pause"></i> -->
+						<span>2</span>
 						<span class="timeline__dot--before"></span>
 					</div>
 					<p class="timeline__name">Entrega</p>
 				</div>
 				<div class="timeline__step">
-					<i class="timeline__icon fa-solid fa-clipboard-check"></i>
-					<div class="timeline__dot"></div>
+					<!-- <i class="timeline__icon fa-solid fa-clipboard-check"></i> -->
+					<div class="timeline__dot">
+						<span>3</span>
+					</div>
 					<p class="timeline__name">Confirmaci&oacute;n</p>
 				</div>
 			</div>
@@ -113,13 +117,13 @@
 						</p>
 						<p class="resume__subtotal">5,500</p>
 					</div>
-					<div class="resume__row">
+					<!-- <div class="resume__row">
             <p class="resume__name">
               <span>Env&iacute;o a Casa</span>
               <small>Miraflores, Lima</small>
             </p>
             <div class="resume__subtotal">500</div>
-          </div>
+          </div> -->
 					<div class="resume__row resume__row--subtotal">
 						<p class="resume__name">
 							<span>3 productos</span>
@@ -132,12 +136,75 @@
 			</div>
       
     </div>
+
+		<div id="direction-modal" class="modal">
+			<div class="modal__content">
+				<div class="modal__main">
+					<p class="modal__title">Nueva direcci&oacute;n</p>
+					<div class="textfield">
+						<span class="textfield__placeholder">Nombre de direcci&oacute;n</span>
+						<input type="text" class="textfield__input">
+					</div>
+					<div class="textfield">
+						<span class="textfield__placeholder">Departamento</span>
+						<select type="text" class="textfield__dropdown">
+							<option value="-1" disabled selected>Seleccione</option>
+							<option value="1">Lima</option>
+							<option value="2">Arequipa</option>
+							<option value="3">Trujillo</option>
+						</select>
+					</div>
+					<div class="textfield">
+						<span class="textfield__placeholder">Provincia</span>
+						<select type="text" class="textfield__dropdown">
+							<option value="-1" disabled selected>Seleccione</option>
+							<option value="1">Lima</option>
+							<option value="2">Huaral</option>
+							<option value="3">Canta</option>
+						</select>
+					</div>
+					<div class="textfield">
+						<span class="textfield__placeholder">Distrito</span>
+						<select type="text" class="textfield__dropdown">
+							<option value="-1" disabled selected>Seleccione</option>
+							<option value="1">San Borja</option>
+							<option value="2">Miraflores</option>
+							<option value="3">Surco</option>
+						</select>
+					</div>
+					<div class="textfield">
+						<span class="textfield__placeholder">Direcci&oacute;n</span>
+						<input type="text" class="textfield__input">
+					</div>
+					<div class="textfield">
+						<span class="textfield__placeholder">Referencia</span>
+						<input type="text" class="textfield__input">
+					</div>
+				</div>
+				<div class="modal__actions">
+					<a href="javascript:void(0)" class="modal__action modal__action--secondary">Cancelar</a>
+					<a href="./delivery.html" class="modal__action modal__action--primary">Guardar direcci&oacute;n</a>
+				</div>
+			</div>
+		</div>
     
   </main>
 
 	<footer></footer>
 
 	<script src="./scripts/main.js"></script>
+
+	<script type="text/javascript">
+		window.onload = () => {
+			const directionsBtn = document.querySelectorAll('.delivery__new, .delivery__edit')
+			directionsBtn.forEach(btn => {
+				btn.addEventListener('click', _ => {
+					const dirModal = document.querySelector('#direction-modal')
+					handleModal(dirModal, 'open')
+				})
+			})
+		}
+	</script>
 
 </body>
 

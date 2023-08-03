@@ -22,174 +22,63 @@
 
     <h2 class="subtitle olimpo__subtitle olimpo__subtitle--center">Lealtad de los Dioses</h2>
 
-		<div class="options">
-			<button class="option" data-option="level" type="button"><span class="icon-bank"></span>Mi nivel</button>
-			<button class="option option--active" data-option="gift" type="button"><span class="icon-gift"></span>Tienda de premios</button>
-			<button class="option" data-option="history" type="button"><span class="icon-history"></span>Historial de canjes</button>
+		<div class="gift__container">
+			<a class="gift__option" href="./landing.html">
+				<span>Productos</span>
+				<div class="gift__image">
+					<img src="./resources/images/product-preview.png" alt="Productos">
+				</div>
+			</a>
+			<a class="gift__option" href="./experiences.html">
+				<span>Experiencias</span>
+				<div class="gift__image">
+					<img src="./resources/images/experience-preview.png" alt="Experiencias">
+				</div>
+			</a>
+			<a class="gift__option" href="./bonus.html">
+				<span>Bonos</span>
+				<div class="gift__image">
+					<img src="./resources/images/bonus-preview.png" alt="Bonos">
+				</div>
+			</a>
 		</div>
 
-		<div class="container content">
-			
-			<div class="option__content level" data-content="level">
-				<div class="level__gray">
-					<div class="container">
-						<div class="level__info">
-							<p>&iexcl;Felicidades, has alcanzado el nivel m&aacute;ximo!</p>
-							<p>Disfruta los mejores beneficios que tenemos para t&iacute;</p>
-						</div>
-						<div class="level__status">
-							<img src="./resources/images/profile/actual-level.svg">
-							<div class="level__libras">
-								<p class="level__name">
-									<span>Nivel</span>
-									<span>Dios</span>
-								</p>
-								<p class="level__libras-count">
-									<img src="./resources/images/coin.svg">
-									<span>5,807</span>
-								</p>
-								<p class="level__progress">
-									<span>Progreso completado</span>
-									<span class="level__progress-bar">100%</span>
-								</p>
-							</div>
-						</div>
-						<img class="level__record" src="./resources/images/profile/level.svg">
-					</div>
-				</div>
-
-				<!-- <div class="level__works">
-					<p class="olimpo__subtitle olimpo__subtitle--center">&iquest;C&oacute;mo funciona?</p>
-					<div class="level__steps">
-						<div class="level__step">
-							<p class="level__step-number">01</p>
-							<p class="level__step-desc">Cr&eacute;te una cuenta en Olimpo.</p>
-						</div>
-						<div class="level__step">
-							<p class="level__step-number">02</p>
-							<p class="level__step-desc">Acumula libras por cada apuesta o jugada en la web de Olimpo.</p>
-						</div>
-						<div class="level__step">
-							<p class="level__step-number">03</p>
-							<p class="level__step-desc">Empieza a disfrutar de los beneficios del programa <b>Lealtad de los Dioses.</b></p>
+		<div class="tutorial">
+			<div class="container">
+				<h2 class="olimpo__subtitle olimpo__subtitle--center">Preguntas frecuentes</h2>
+				<div class="accordion">
+					<button type="button" class="accordion__handler">
+						<span>&iquest;C&oacute;mo utilizar mis bonos?</span>
+						<i class="fa-solid fa-plus"></i>
+					</button>
+					<div class="accordion__content">
+						<div>
+							<p>Los bonos puedes ser utilizados en los juegos de casino y algunos de casino en vivo y siempre se debe tener en cuenta que los juegos tienen una contribución al roll over distinta.</p>
+							<p>El bono es parte de tu saldo, cuando realizas una apuesta, primero se utiliza el efectivo y luego el bono.</p>
+							<p>Ejemplo: tienes S/60 en efectivo y S/40 en Bonos, tu saldo total es de S/100. Si realizas una apuesta S/80 esta consiste en tus S/60 en efectivo y S/20 en bonos, quiere decir que, el premio que recibas al momento de ganar se dividirá de la misma forma. Esta misma lógica se aplica para la contribución al rollover y el monto que puedes llegar a convertir.</p>
 						</div>
 					</div>
-				</div> -->
-
-				<div class="level__accumulate">
-					<p class="olimpo__subtitle olimpo__subtitle--center">&iquest;C&oacute;mo acumulo Libras?</p>
-					<p>Acumula libras calificables seg&uacute;n las siguientes condiciones:</p>
-					<ul class="level__conditions">
-						<li class="level__condition">
-							<span>Tragamonedas (Casino)</span>
-							<span>Cada S/4 <i class="fa-solid fa-circle-arrow-right"></i> <img src="./resources/images/coin.svg">1</span>
-						</li>
-						<li class="level__condition">
-							<span>Mesas en vivo (Casino en vivo)</span>
-							<span>Cada S/6 <i class="fa-solid fa-circle-arrow-right"></i> <img src="./resources/images/coin.svg">1</span>
-						</li>
-						<li class="level__condition">
-							<span>Juegos en espec&iacute;fico Casino & Casino en vivo</span>
-							<span>Cada S/5 <i class="fa-solid fa-circle-arrow-right"></i> <img src="./resources/images/coin.svg">1</span>
-						</li>
-						<li class="level__condition">
-							<span>Virtuales</span>
-							<span>Cada S/2 <i class="fa-solid fa-circle-arrow-right"></i> <img src="./resources/images/coin.svg">1</span>
-						</li>
-						<li class="level__condition">
-							<span>Apuestas Simples/Sistema</span>
-							<span>Cada S/2 <i class="fa-solid fa-circle-arrow-right"></i> <img src="./resources/images/coin.svg">1</span>
-						</li>
-						<li class="level__condition">
-							<span>Apuestas combinadas</span>
-							<span>Cada S/1 <i class="fa-solid fa-circle-arrow-right"></i> <img src="./resources/images/coin.svg">1</span>
-						</li>
-						<li class="level__condition">
-							<span>Polla Olimpo</span>
-							<span>Cada S/1 <i class="fa-solid fa-circle-arrow-right"></i> <img src="./resources/images/coin.svg">10</span>
-						</li>
-					</ul>
 				</div>
-
-				<div class="level__benefits">
-					<div class="container">
-						<p class="olimpo__subtitle olimpo__subtitle--center">Tabla de beneficios</p>
-						<p>Consigue libras del Olimpo y disfruta todos los beneficios del programa Lealtad de los Dioses</p>
-						<img src="./resources/images/profile/benefits.jpg" />
+				<div class="accordion">
+					<button type="button" class="accordion__handler">
+						<span>&iquest;C&oacute;mo ver mis movimientos de recargas y retiros?</span>
+						<i class="fa-solid fa-plus"></i>
+					</button>
+					<div class="accordion__content">
+						<div><p>Dentro del menú de usuario en la sección de “historial” podrás ver dos opciones en la mano superior, selecciona la de “depósitos y retiradas” y podrás ver tus recargas y retiros.</p></div>
 					</div>
 				</div>
-			</div>
-
-			<div class="option__content gift" data-content="gift">
-				<div class="gift__container">
-					<a class="gift__option" href="./landing.html">
-						<span>Productos</span>
-						<div class="gift__image">
-							<img src="./resources/images/product-preview.png" alt="Productos">
-						</div>
-					</a>
-					<a class="gift__option" href="./experiences.html">
-						<span>Experiencias</span>
-						<div class="gift__image">
-							<img src="./resources/images/experience-preview.png" alt="Experiencias">
-						</div>
-					</a>
-					<a class="gift__option" href="./bonus.html">
-						<span>Bonos</span>
-						<div class="gift__image">
-							<img src="./resources/images/bonus-preview.png" alt="Bonos">
-						</div>
-					</a>
+				<div class="accordion">
+					<button type="button" class="accordion__handler">
+						<span>&iquest;Cu&aacute;nto demora la revisi&oacute;n de mi documento de identidad?</span>
+						<i class="fa-solid fa-plus"></i>
+					</button>
+					<div class="accordion__content">
+						<div><p>Tu seguridad es muy importante para nosotros, por tal motivo, el proceso de validación es fundamental para comprobar tu identidad y evitar futuros inconvenientes relacionados a la falsificación de identidad. Debido a esto, nuestro proceso de validación puede demorar hasta 2 horas hábiles; sin embargo, el proceso es único y una vez ya validado tu documento de identidad, podrás proceder con tus retiros libremente y cobrar tan rápido como un rayo⚡</p></div>
+					</div>
 				</div>
-				<a href="./ask.html" class="gift__ask">
-					Preguntas frecuentes
-					<i class="icon-ask"></i>
-				</a>
+				<a class="go-ask" href="./ask.html">Ver todas las preguntas frecuentes <i class="icon-ask"></i></a>
 			</div>
-
-			<div class="option__content history" data-content="history">
-				<div class="container">
-					<table class="history__table">
-						<tr class="history__head">
-							<th></th>
-							<th>C&oacute;digo</th>
-							<th>Tipo</th>
-							<th>Libras descontadas</th>
-							<th>Estado</th>
-							<th>Usuario</th>
-							<th>Fecha de canje</th>
-						</tr>
-						<tr class="history__body">
-							<td><button type="button"><i class="fa-solid fa-angle-down"></i></button></td>
-							<td>6490bd7f86436b5c9d84964e</td>
-							<td>Bonos</td>
-							<td>6,000</td>
-							<td>Entregado</td>
-							<td>Luis Angel Peralta</td>
-							<td>19/06/2023</td>
-						</tr>
-						<tr class="history__body">
-							<td><button type="button"><i class="fa-solid fa-angle-down"></i></button></td>
-							<td>64878d629f70fded22061bf4</td>
-							<td>Bonos</td>
-							<td>8,000</td>
-							<td>Entregado</td>
-							<td>Andreu Amadeus Ayaipoma</td>
-							<td>12/06/2023</td>
-						</tr>
-						<tr class="history__body">
-							<td><button type="button"><i class="fa-solid fa-angle-down"></i></button></td>
-							<td>6486a091a1b79a2b9a9e0daa</td>
-							<td>Productos</td>
-							<td>8000</td>
-							<td>Pendiente</td>
-							<td>Andreu Amadeus</td>
-							<td>11/06/2023</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			
 		</div>
 		
 		<div id="welcome-modal" class="modal">

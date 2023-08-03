@@ -190,6 +190,7 @@ button {
   opacity: 0;
   transition: 0.25s;
   z-index: 1;
+  padding: 30px;
 
   &__content {
     background-color: var(--gray-1);
@@ -197,6 +198,9 @@ button {
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.95);
     width: 450px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -273,6 +277,11 @@ button {
     gap: 10px;
     border-top: 1px solid var(--gray-2);
     padding-top: 20px;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+    
   }
 
   &__action {
@@ -301,6 +310,10 @@ button {
       border-color: var(--green-3);
       background-color: var(--green-3);
       color: white;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
     }
     
   }
@@ -391,6 +404,42 @@ button {
       color: var(--gray-2);
     }
     
+  }
+  
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__placeholder {
+    font-size: 14px;
+    color: var(--gray-2);
+    text-align: left;
+  }
+
+  &__input, &__dropdown {
+    border: 1px solid var(--gray-1);
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 46px;
+    outline: none;
+    padding: 0 15px;
+    transition: 0.25s;
+
+    &:focus { border-color: var(--green-1); }
+    
+  }
+
+  &__input {
+    appearance: none;
+  }
+
+  &__dropdown {
+    height: 50px;
   }
   
 }

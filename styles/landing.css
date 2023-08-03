@@ -1,24 +1,43 @@
-.home {
+.landing {
   background-color: white;
 }
-.home .head {
-  background-color: var(--gray-2);
+.landing .glide {
+  background-color: var(--gray-1);
 }
-.home .head img {
-  display: block;
+.landing .glide__slide img {
   width: 100%;
 }
-.home .promotions {
+.landing .glide__bullets {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.landing .glide__bullet {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.35);
+  transition: 0.25s;
+}
+.landing .glide__bullet--active {
+  background-color: var(--yellow);
+}
+.landing .promotions {
   padding: 40px 0 60px 0;
   background-color: var(--gray-1);
 }
-.home .promotions .glide__slides {
+.landing .promotions .glide__slides {
   padding: 5px 0;
 }
-.home .promotions__carousel {
+.landing .promotions__carousel {
   margin-top: 40px;
 }
-.home .promotions__more {
+.landing .promotions__more {
   border: 1px solid var(--green-1);
   margin: auto;
   display: inline-block;
@@ -27,41 +46,41 @@
   color: var(--green-1);
   background-color: white;
 }
-.home .viewed {
+.landing .viewed {
   margin-top: 60px;
 }
-.home .viewed__list {
+.landing .viewed__list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   list-style: none;
   margin-top: 40px;
 }
-.home .viewed .glide__slide {
+.landing .viewed .glide__slide {
   width: calc(25% - 22.5px);
 }
 @media screen and (max-width: 840px) {
-  .home .viewed .glide__slide {
+  .landing .viewed .glide__slide {
     width: calc(50% - 15px);
   }
 }
 @media screen and (max-width: 500px) {
-  .home .viewed__list {
+  .landing .viewed__list {
     gap: 15px;
   }
-  .home .viewed .glide__slide {
+  .landing .viewed .glide__slide {
     width: calc(50% - 7.5px);
   }
 }
-.home .tutorial {
+.landing .tutorial {
   padding: 60px 0;
   background-color: var(--gray-1);
   margin-top: 60px;
 }
-.home .tutorial .olimpo__subtitle {
+.landing .tutorial .olimpo__subtitle {
   margin-bottom: 40px;
 }
-.home .tutorial .go-ask {
+.landing .tutorial .go-ask {
   margin: auto;
   max-width: 400px;
   width: 100%;
@@ -75,10 +94,10 @@
   padding: 15px;
   margin-top: 30px;
 }
-.home .categories {
+.landing .categories {
   padding: 60px 0;
 }
-.home .categories__list {
+.landing .categories__list {
   display: flex;
   align-items: center;
   margin-top: 40px;
@@ -86,7 +105,7 @@
   gap: 15px;
   flex-wrap: wrap;
 }
-.home .categories .category {
+.landing .categories .category {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,33 +116,33 @@
   border-radius: 50%;
   background-color: var(--gray-1);
 }
-.home .categories .category i {
+.landing .categories .category i {
   font-size: 26px;
   color: var(--gray-2);
 }
-.home .categories .category span {
+.landing .categories .category span {
   color: var(--gray-3);
   font-size: 12px;
 }
-.home .links {
+.landing .links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
   margin: 60px auto 100px auto;
 }
-.home .links__item {
+.landing .links__item {
   width: 100%;
 }
-.home .links__item img {
+.landing .links__item img {
   width: 100%;
   margin-bottom: 20px;
 }
-.home .links__item .button {
+.landing .links__item .button {
   padding: 15px 20px;
 }
 @media screen and (max-width: 630px) {
-  .home .links {
+  .landing .links {
     flex-direction: column;
   }
 }
