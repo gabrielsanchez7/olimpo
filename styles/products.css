@@ -25,49 +25,6 @@
     display: flex;
   }
 }
-.products .searcher, .experiences .searcher {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 40px;
-}
-.products .searcher__input, .experiences .searcher__input {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid var(--gray-2);
-  padding: 0 15px;
-  border-radius: 12px;
-  width: calc(100% - 60px);
-}
-.products .searcher__input i, .experiences .searcher__input i {
-  color: var(--gray-2);
-  font-size: 20px;
-}
-.products .searcher__input input, .experiences .searcher__input input {
-  outline: none;
-  border: none;
-  appearance: none;
-  line-height: 48px;
-  font-size: 16px;
-}
-.products .searcher__input input::placeholder, .experiences .searcher__input input::placeholder {
-  color: var(--gray-2);
-}
-.products .searcher .icon-filter, .experiences .searcher .icon-filter {
-  border: 1px solid var(--gray-2);
-  min-width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  color: var(--green-1);
-  font-size: 20px;
-}
-@media screen and (max-width: 620px) {
-  .products .searcher, .experiences .searcher {
-    display: flex;
-  }
-}
 .products .olimpo__subtitle, .experiences .olimpo__subtitle {
   margin: 60px 0 40px 0;
 }
@@ -121,32 +78,43 @@
   }
 }
 .products .gallery, .experiences .gallery {
-  padding: 60px 0 60px 0;
+  padding: 40px 0 60px 0;
   background-color: var(--gray-1);
 }
 .products .gallery .gallery__config, .experiences .gallery .gallery__config {
   margin-bottom: 30px;
   display: flex;
+  align-items: center;
   gap: 15px;
+  width: 100%;
 }
 .products .gallery .gallery__config .gallery__points, .products .gallery .gallery__config .button, .experiences .gallery .gallery__config .gallery__points, .experiences .gallery .gallery__config .button {
   background-color: white;
   border: 1px solid var(--gray-2);
   color: var(--gray-3);
   outline: none;
+  border-radius: 12px;
+  height: 48px;
+  min-width: 240px;
 }
 .products .gallery .gallery__config .gallery__points--active, .products .gallery .gallery__config .button--active, .experiences .gallery .gallery__config .gallery__points--active, .experiences .gallery .gallery__config .button--active {
   background-color: var(--yellow);
   color: var(--green-1);
   border-color: transparent;
 }
-@media screen and (max-width: 535px) {
+.products .gallery .gallery__config .searcher, .experiences .gallery .gallery__config .searcher {
+  margin-top: 0;
+  width: 100%;
+  background-color: white;
+}
+@media screen and (max-width: 800px) {
   .products .gallery .gallery__config, .experiences .gallery .gallery__config {
     flex-direction: column;
     gap: 10px;
   }
-  .products .gallery .gallery__config .button, .experiences .gallery .gallery__config .button {
+  .products .gallery .gallery__config .gallery__points, .products .gallery .gallery__config .button, .experiences .gallery .gallery__config .gallery__points, .experiences .gallery .gallery__config .button {
     text-align: center;
+    width: 100%;
   }
 }
 .products .gallery .gallery__list, .experiences .gallery .gallery__list {

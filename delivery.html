@@ -132,7 +132,7 @@
 						<div class="resume__subtotal"><img src="./resources/images/coin.svg" /> 35,000</div>
 					</div>
 				</div>
-				<a href="./confirmation.html" class="button button--primary">Canjear 3 productos</a>
+				<button type="button" class="resume__exchange button button--primary">Canjear 3 productos</button>
 			</div>
       
     </div>
@@ -187,6 +187,21 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="confirm-modal" class="modal">
+			<div class="modal__content">
+				<div class="modal__icon">
+					<img src="./resources/images/logo.png" alt="Olimpo">
+				</div>
+				<div class="modal__main">
+					<p class="modal__title">&iquest;Seguro que deseas completar el canje?</p>
+				</div>
+				<div class="modal__actions">
+					<a href="javascript:void(0)" class="modal__action modal__action--secondary">Cancelar</a>
+					<a href="./confirmation.html" class="modal__action modal__action--primary">Canjear</a>
+				</div>
+			</div>
+		</div>
     
   </main>
 
@@ -202,6 +217,12 @@
 					const dirModal = document.querySelector('#direction-modal')
 					handleModal(dirModal, 'open')
 				})
+			})
+
+			const exchangeBtn = document.querySelector('.resume__exchange')
+			exchangeBtn.addEventListener('click', _ => {
+				const exchangeModal = document.querySelector('#confirm-modal')
+				handleModal(exchangeModal, 'open')
 			})
 		}
 	</script>
