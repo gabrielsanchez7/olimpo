@@ -76,6 +76,10 @@ function selectCategory() {
       
       filterCategory = target.getAttribute('data-category')
       getProducts(filterCategory, filterPrice)
+
+      if(filterCategory == 'travel') {
+        location.href = './travel.html'
+      }
     })
   })
 
