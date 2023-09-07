@@ -127,6 +127,12 @@
   color: var(--green-1);
   font-weight: bold;
 }
+.product-detail .content__customize {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 .product-detail .content__color p {
   color: var(--gray-3);
 }
