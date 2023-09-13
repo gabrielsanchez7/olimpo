@@ -242,6 +242,16 @@
     width: 35%;
   }
 
+  &__whatsapp {
+    background-color: var(--green-3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
   &__info {
     width: 35%;
   }
@@ -260,7 +270,7 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
-    display: inline-block;
+    display: block;
 
     &::after {
       content: '';
