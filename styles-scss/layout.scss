@@ -239,7 +239,20 @@
   }
 
   &__contact {
-    width: 35%;
+    width: 30%;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    a {
+      display: inline-block;
+      color: var(--gray-1);
+      font-size: 20px;
+    }
   }
 
   &__whatsapp {
@@ -248,17 +261,23 @@
     padding: 10px 20px;
     border-radius: 40px;
     display: inline-block;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
     font-size: 14px;
   }
 
   &__info {
-    width: 35%;
+    width: 40%;
+
+    &-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
   }
 
   &__brand {
     width: 30%;
-    padding-top: 20px;
 
     img {
       width: 200px;
@@ -290,6 +309,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    width: 250px;
   }
 
   &__powered {
@@ -299,13 +319,60 @@
     padding: 20px 40px;
   }
 
-  &__rights span {
-    color: var(--yellow);
-    font-size: 13px;
-    display: inline-flex;
+  &__rights {
+    span {
+      color: var(--yellow);
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      &:last-child {
+        color: var(--green-3);
+      }
+    }
+  }
+
+  &__tycs > div {
+    border-top: 1px solid var(--gray-1);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
+    gap: 30px;
+    padding: 20px 0;
+
+    .footer__tycs-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      font-size: 14px;
+
+      &:last-child {
+        min-width: 250px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+    
+  }
+
+  @media screen and (max-width: 860px) {
+    &__tycs > div {
+      flex-direction: column;
+    }
+    &__tycs-row {
+      img { min-width: 50px; }
+      &:last-child { display: none !important; }
+      &:first-child {
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+      }
+    }
   }
 
   @media screen and (max-width: 750px) {
@@ -315,25 +382,31 @@
     }
 
     &__brand {
-      order: 1;
+      // order: 1;
       width: 100%;
       text-align: center;
     }
 
     &__contact {
-      order: 2;
-      width: calc(50% - 15px);
+      // order: 2;
+      width: calc(40% - 15px);
     }
 
     &__info {
-      order: 3;
-      width: calc(50% - 15px);
+      // order: 3;
+      width: calc(60% - 15px);
     }
 
   }
 
   @media screen and (max-width: 500px) {
     &__brand, &__contact, &__info { width: 100%; }
+    &__whatsapp {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+    }
   }
   
 }

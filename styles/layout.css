@@ -195,7 +195,18 @@
   justify-content: space-between;
 }
 .footer__contact {
-  width: 35%;
+  width: 30%;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer__social a {
+  display: inline-block;
+  color: var(--gray-1);
+  font-size: 20px;
 }
 .footer__whatsapp {
   background-color: var(--green-3);
@@ -203,15 +214,19 @@
   padding: 10px 20px;
   border-radius: 40px;
   display: inline-block;
-  margin-top: 10px;
+  margin: 10px 0 20px 0;
   font-size: 14px;
 }
 .footer__info {
-  width: 35%;
+  width: 40%;
+}
+.footer__info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 .footer__brand {
   width: 30%;
-  padding-top: 20px;
 }
 .footer__brand img {
   width: 200px;
@@ -238,6 +253,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  width: 250px;
 }
 .footer__powered {
   background-color: var(--green-2);
@@ -253,28 +269,72 @@
   justify-content: center;
   gap: 5px;
 }
+.footer__rights span:last-child {
+  color: var(--green-3);
+}
+.footer__tycs > div {
+  border-top: 1px solid var(--gray-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+.footer__tycs > div .footer__tycs-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+}
+.footer__tycs > div .footer__tycs-row:last-child {
+  min-width: 250px;
+}
+.footer__tycs > div .footer__tycs-row a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (max-width: 860px) {
+  .footer__tycs > div {
+    flex-direction: column;
+  }
+  .footer__tycs-row img {
+    min-width: 50px;
+  }
+  .footer__tycs-row:last-child {
+    display: none !important;
+  }
+  .footer__tycs-row:first-child {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+  }
+}
 @media screen and (max-width: 750px) {
   .footer__container {
     flex-wrap: wrap;
     padding: 20px 0 40px 0;
   }
   .footer__brand {
-    order: 1;
     width: 100%;
     text-align: center;
   }
   .footer__contact {
-    order: 2;
-    width: calc(50% - 15px);
+    width: calc(40% - 15px);
   }
   .footer__info {
-    order: 3;
-    width: calc(50% - 15px);
+    width: calc(60% - 15px);
   }
 }
 @media screen and (max-width: 500px) {
   .footer__brand, .footer__contact, .footer__info {
     width: 100%;
+  }
+  .footer__whatsapp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
   }
 }
 
