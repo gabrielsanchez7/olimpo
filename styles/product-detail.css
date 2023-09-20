@@ -87,6 +87,17 @@
   border-radius: 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
 }
+.product-detail .content__flag {
+  display: inline-flex;
+  gap: 5px;
+  align-items: baseline;
+  padding: 5px 10px;
+  background-color: var(--green-3);
+  color: white;
+  font-size: 14px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
 .product-detail .content__brand {
   font-size: 18px;
   color: var(--green-1);

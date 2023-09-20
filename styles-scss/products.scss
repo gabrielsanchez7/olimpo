@@ -300,6 +300,20 @@
     
   }
 
+  &__flag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-flex;
+    gap: 5px;
+    align-items: baseline;
+    padding: 5px 10px;
+    background-color: var(--green-3);
+    color: white;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+
   &__detail {
     padding: 20px;
   }
