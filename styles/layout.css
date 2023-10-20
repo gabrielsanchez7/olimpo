@@ -1,6 +1,8 @@
 .header {
   background-color: var(--green-1);
   height: 70px;
+  width: 100%;
+  z-index: 10;
 }
 .header__container {
   display: flex;

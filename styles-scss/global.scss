@@ -443,3 +443,39 @@ button {
   }
   
 }
+
+.switch {
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid var(--gray-2);
+  min-width: 70px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s;
+
+  &__dot {
+    display: block;
+    min-height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--gray-2);
+    pointer-events: none;
+    position: absolute;
+    top: 4px;
+    right: calc(100% - 35px);
+    transition: 0.25s;
+  }
+
+  &--on {
+    background-color: var(--green-1);
+    border-color: var(--green-1);
+
+    .switch__dot {
+      right: 5px;
+      background-color: white;
+    }
+    
+  }
+
+}

@@ -143,3 +143,30 @@ function startTimer(container) {
     }
   }, 60000)
 }
+
+function handleSwitch() {
+  const switchUI = document.querySelectorAll('.switch')
+  switchUI.forEach(it => {
+    it.addEventListener('click', e => {
+      const status = it.getAttribute('data-status')
+      it.setAttribute('data-status', status == 'on' ? 'off' : 'on')
+      it.classList.toggle('switch--on')
+    })
+  })
+}
+
+function floatingMenu() {
+  window.addEventListener('scroll', () => {
+    const top = window.scrollY
+    const header = document.querySelector('header')
+    const main = document.querySelector('main')
+
+    if(top > 70) {
+      header.style.position = 'fixed'
+      main.style.paddingTop = '70px'
+    } else {
+      header.removeAttribute('style')
+      main.removeAttribute('style')
+    }
+  })
+}

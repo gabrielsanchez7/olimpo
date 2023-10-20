@@ -57,16 +57,26 @@
 				<i class="categories__icon icon-depor"></i>
 				<span class="categories__label">Deporte</span>
 			</button>
+			<button class="categories__item" data-category="tech">
+				<i class="categories__icon icon-plus"></i>
+				<span class="categories__label">Todos</span>
+			</button>
 		</div>
 
 		<div class="gallery">
 			<div class="container">
 				<div class="gallery__config">
+					<div class="gallery__points">
+						<button class="gallery__switch switch" type="button" data-status="off">
+							<span class="switch__dot"></span>
+						</button>
+						<span class="gallery__points-label">Con mis puntos disponibles</span>
+					</div>
 					<div class="searcher">
 						<i class="searcher__icon fa-solid fa-magnifying-glass"></i>
 						<input class="searcher__input" type="text" placeholder="Buscar productos">
 					</div>
-					<button type="button" class="gallery__points button button--primary">Con mis puntos disponibles</button>
+					<!-- <button type="button" class="gallery__points button button--primary">Con mis puntos disponibles</button> -->
 					<select class="gallery__sort button button--primary">
 						<option disabled selected value="-1">Ordenar por</option>
 						<option value="AZ">Ordenar de A-Z</option>

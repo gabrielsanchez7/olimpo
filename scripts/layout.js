@@ -81,5 +81,6 @@ function callbacksLayout() {
     contentSize(headerHeight, footerHeight)
     activeMenu()
     footerPadding()
+    floatingMenu()
   }
 }

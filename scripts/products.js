@@ -102,5 +102,6 @@ function selectCategory() {
 window.onload = function() {
   getProducts()
   selectCategory()
+  handleSwitch()
   loadHTMLSection('product-card')
 }
