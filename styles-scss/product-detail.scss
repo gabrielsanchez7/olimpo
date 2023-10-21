@@ -3,7 +3,7 @@
   background-color: var(--gray-1);
 
   @media screen and (max-width: 740px) {
-    padding: 20px 0;
+    padding: 20px 0 60px 0;
   }
 
   .head {
@@ -222,6 +222,21 @@
     
   }
 
+  .review-row {
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+      gap: 30px;
+
+      .review {
+        min-width: unset;
+        width: 100%;
+      }
+      
+    }
+    
+  }
+
   .review {
     margin-top: 30px;
     min-width: 370px;
@@ -313,6 +328,23 @@
       padding-top: 30px;
       border-top: 1px solid var(--gray-2);
 
+      &-star {
+        font-size: 18px;
+
+        &[selected] {
+          color: var(--green-3) !important;
+        }
+        
+      }
+
+      .fa-regular.fa-star {
+        color: var(--gray-2);
+      }
+
+      .fa.fa-star {
+        color: var(--green-3);
+      }
+
       .button {
         padding: 11px 20px;
       }
@@ -323,7 +355,7 @@
       display: block;
       width: 100%;
       appearance: none;
-      height: 100px;
+      height: 140px;
       resize: none;
       border: 1px solid var(--gray-2);
       border-radius: 10px;

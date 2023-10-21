@@ -92,7 +92,7 @@
 			
 		</div>
 
-		<div class="row container">
+		<div class="row container review-row">
 
 			<div class="review">
 				<p class="review__title">Calificaci&oacute;n del producto</p>
@@ -306,32 +306,39 @@
 			})
 
 			const star = document.querySelectorAll('.review__own-star')
+			const toggleStar = (it) => {
+				const prevSib = getPreviousSiblings(it)
+				const selected = it.getAttribute('selected')
+				if(selected == null) {
+					it.classList.toggle('fa-regular')
+					it.classList.toggle('fa')
+					Array.from(prevSib, (sib) => {
+						const sibSelected = sib.getAttribute('selected')
+						if(sibSelected == null) {
+							sib.classList.toggle('fa-regular')
+							sib.classList.toggle('fa')
+						}
+					})
+				}
+			}
+
 			star.forEach(it => {
-				it.addEventListener('mouseover', () => {
-					const prevSib = getPreviousSiblings(it)
-					it.classList.toggle('fa-regular')
-					it.classList.toggle('fa')
-					Array.from(prevSib, (sib) => {
-						sib.classList.toggle('fa-regular')
-						sib.classList.toggle('fa')
-					})
-				})
-				it.addEventListener('mouseleave', () => {
-					const prevSib = getPreviousSiblings(it)
-					it.classList.toggle('fa-regular')
-					it.classList.toggle('fa')
-					Array.from(prevSib, (sib) => {
-						sib.classList.toggle('fa-regular')
-						sib.classList.toggle('fa')
-					})
-				})
+				it.addEventListener('mouseover', () => toggleStar(it))
+				it.addEventListener('mouseleave', () => toggleStar(it))
 				it.addEventListener('click', () => {
 					const prevSib = getPreviousSiblings(it)
-					it.classList.toggle('fa-regular')
-					it.classList.toggle('fa')
-					Array.from(prevSib, (sib) => {
-						sib.classList.toggle('fa-regular')
-						sib.classList.toggle('fa')
+					const nextSib = getNextSiblings(it)
+
+					it.setAttribute('selected', '')
+					Array.from(prevSib, sib => {
+						sib.setAttribute('selected', '')
+						sib.classList.add('fa')
+						sib.classList.remove('fa-regular')
+					})
+					Array.from(nextSib, sib => {
+						sib.removeAttribute('selected')
+						sib.classList.add('fa-regular')
+						sib.classList.remove('fa')
 					})
 				})
 			})

@@ -24,13 +24,27 @@ function getSiblings(element, selector = null) {
  */
 function getPreviousSiblings(element) {
   let siblings = []
-  console.log(element)
   while(element = element.previousElementSibling) {
     if(element.nodeType === 1) {
       siblings.push(element)
     }
   }
   return siblings
+}
+
+/**
+ * Obtiene todos los elementos próximos de un elemento del DOM
+ * @param {HTMLElement} element Elemento del que se quiere obtener los hermanos próximos
+ * @returns Lista de elementos hermanos próximos
+ */
+function getNextSiblings(element) {
+  let siblins = []
+  let currentElement = element.nextElementSibling
+  while(currentElement != null) {
+    siblins.push(currentElement)
+    currentElement = currentElement.nextElementSibling
+  }
+  return siblins
 }
 
 /**
