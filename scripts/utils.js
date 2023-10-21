@@ -18,6 +18,22 @@ function getSiblings(element, selector = null) {
 }
 
 /**
+ * Obtiene todos los elementos hermanos previos de un elemento del DOM
+ * @param {HTMLElement} element Elemento del que se quiere obtener los hermanos anteriores
+ * @returns Lista de elementos hermanos previos.
+ */
+function getPreviousSiblings(element) {
+  let siblings = []
+  console.log(element)
+  while(element = element.previousElementSibling) {
+    if(element.nodeType === 1) {
+      siblings.push(element)
+    }
+  }
+  return siblings
+}
+
+/**
  * Convierte un tipo de dato numérico a formato de moneda
  * @param {number} currencyString - Valor numérico
  * @returns Valor en tipo moneda

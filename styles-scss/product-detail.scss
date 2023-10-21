@@ -32,6 +32,7 @@
   .preview {
     display: flex;
     align-items: center;
+    width: 370px;
     
     & > img {
       width: 300px;
@@ -217,6 +218,219 @@
       margin-top: 30px;
       padding-left: 30px;
       padding-right: 30px;
+    }
+    
+  }
+
+  .review {
+    margin-top: 30px;
+    min-width: 370px;
+    text-align: center;
+
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    &__points {
+      font-weight: 800;
+      font-size: 50px;
+      margin: 10px 0 0 0;
+      color: var(--green-1);
+    }
+
+    &__stars {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      gap: 10px;
+      margin-bottom: 7px;
+    }
+
+    &__star {
+      color: var(--green-3);
+    }
+
+    &__based {
+      font-size: 14px;
+      color: var(--gray-3);
+      margin-bottom: 20px;
+    }
+
+    .review__counter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &-num {
+        font-size: 14px;
+        color: var(--gray-3);
+        width: 100px;
+        text-align: right;
+      }
+
+      &-bar {
+        display: block;
+        border: 1px solid var(--gray-2);
+        border-radius: 5px;
+        width: 100%;
+        height: 24px;
+        position: relative;
+        overflow: hidden;
+        background-color: white;
+      }
+
+      &-progress {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--gray-2);
+      }
+      
+    }
+
+    &__subtitle {
+      font-weight: 500;
+    }
+
+    &__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__own {
+      text-align: left;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid var(--gray-2);
+
+      .button {
+        padding: 11px 20px;
+      }
+      
+    }
+
+    &__comment {
+      display: block;
+      width: 100%;
+      appearance: none;
+      height: 100px;
+      resize: none;
+      border: 1px solid var(--gray-2);
+      border-radius: 10px;
+      outline: none;
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px 0 12px 0;
+    }
+
+  }
+
+  .comments {
+    margin-top: 30px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--gray-3);
+      margin-bottom: 30px;
+    }
+
+  }
+
+  .comment {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(odd) {
+
+      .comment {
+
+        &__img { order: 2; }
+
+        &__content::before {
+          left: unset;
+          right: -11px;
+          border-bottom-width: 0;
+          border-left-width: 0;
+          border-top-width: 1px;
+          border-right-width: 1px;
+        }
+
+      }
+
+    }
+
+    &__img {
+      min-width: 70px;
+      max-width: 70px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &__content {
+      display: block;
+      background-color: white;
+      border: 1px solid var(--gray-1);
+      box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.05);
+      border-radius: 20px;
+      padding: 20px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 20px;
+        width: 20px;
+        border: 1px solid var(--gray-1);
+        border-top-width: 0;
+        border-right-width: 0;
+        background-color: white;
+        top: 26px;
+        left: -11px;
+        transform: rotate(45deg);
+      }
+
+    }
+
+    &__name {
+      color: var(--green-1);
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    &__stars {
+      margin: 5px 0 10px 0;
+    }
+    
+    &__star {
+      color: var(--green-3);
+
+      &-text {
+        font-weight: 500;
+        color: var(--gray-2);
+      }
+      
     }
     
   }
