@@ -39,6 +39,10 @@
 
 
 		<div class="categories container">
+			<button class="categories__item" data-category="tech">
+				<i class="categories__icon icon-cart"></i>
+				<span class="categories__label">Todas las<br>experiencias</span>
+			</button>
 			<button class="categories__item" data-category="travel">
 				<i class="categories__icon icon-viajes"></i>
 				<span class="categories__label">Viajes</span>
@@ -55,10 +59,6 @@
 				<i class="categories__icon icon-music"></i>
 				<span class="categories__label">Conciertos</span>
 			</button>
-			<button class="categories__item" data-category="tech">
-				<i class="categories__icon icon-plus"></i>
-				<span class="categories__label">Todos</span>
-			</button>
 		</div>
 
 		<div class="gallery">
@@ -66,15 +66,17 @@
 				<div class="olimpo__flex">
 					<!-- <h2 class="olimpo__subtitle">Experiencias cercanas</h2> -->
 					<div class="gallery__config">
-						<div class="gallery__points">
-							<button class="gallery__switch switch" type="button" data-status="off">
-								<span class="switch__dot"></span>
-							</button>
-							<span class="gallery__points-label">Con mis puntos disponibles</span>
-						</div>
 						<div class="searcher">
 							<i class="searcher__icon fa-solid fa-magnifying-glass"></i>
 							<input class="searcher__input" type="text" placeholder="Buscar productos">
+						</div>
+						<div class="gallery__points">
+							<span class="gallery__points-label">Con mis libras disponibles</span>
+							<button class="gallery__switch switch" type="button" data-status="off">
+								<span class="switch__dot">
+									<i class="fa-solid fa-check"></i>
+								</span>
+							</button>
 						</div>
 						<!-- <button type="button" class="gallery__points button button--primary">Con mis puntos disponibles</button> -->
 						<select class="gallery__sort button button--primary">

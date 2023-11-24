@@ -94,6 +94,10 @@
     padding-bottom: 60px;
     overflow: auto;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
     &__item {
       display: inline-flex;
@@ -105,10 +109,6 @@
       min-width: 100px;
       border-radius: 50%;
       background-color: var(--gray-1);
-
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
 
       i {
         font-size: 26px;
@@ -173,10 +173,17 @@
       .gallery__points {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
+        border: 1px solid var(--gray-2);
+        border-radius: 12px;
+        padding: 10px 18px;
+        max-height: 48px;
+        background-color: white;
 
         &-label {
           white-space: nowrap;
+          color: var(--gray-3);
         }
         
       }
@@ -196,6 +203,11 @@
           text-align: center;
           width: 100%;
         }
+        
+        .gallery__points {
+          width: 100%;
+        }
+        
       }
       
     }

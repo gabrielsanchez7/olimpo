@@ -39,6 +39,10 @@
 
 		<div class="categories container">
 			<button class="categories__item" data-category="tech">
+				<i class="categories__icon icon-cart"></i>
+				<span class="categories__label">Todos los<br>productos</span>
+			</button>
+			<button class="categories__item" data-category="tech">
 				<i class="categories__icon icon-tech"></i>
 				<span class="categories__label">Tecnolog&iacute;a</span>
 			</button>
@@ -57,30 +61,27 @@
 				<i class="categories__icon icon-depor"></i>
 				<span class="categories__label">Deporte</span>
 			</button>
-			<button class="categories__item" data-category="tech">
-				<i class="categories__icon icon-plus"></i>
-				<span class="categories__label">Todos</span>
-			</button>
 		</div>
 
 		<div class="gallery">
 			<div class="container">
 				<div class="gallery__config">
-					<div class="gallery__points">
-						<button class="gallery__switch switch" type="button" data-status="off">
-							<span class="switch__dot"></span>
-						</button>
-						<span class="gallery__points-label">Con mis puntos disponibles</span>
-					</div>
 					<div class="searcher">
 						<i class="searcher__icon fa-solid fa-magnifying-glass"></i>
 						<input class="searcher__input" type="text" placeholder="Buscar productos">
 					</div>
+					<div class="gallery__points">
+						<span class="gallery__points-label">Con mis libras disponibles</span>
+						<button class="gallery__switch switch" type="button" data-status="off">
+							<span class="switch__dot">
+								<i class="fa-solid fa-check"></i>
+							</span>
+						</button>
+					</div>
 					<!-- <button type="button" class="gallery__points button button--primary">Con mis puntos disponibles</button> -->
 					<select class="gallery__sort button button--primary">
 						<option disabled selected value="-1">Ordenar por</option>
-						<option value="AZ">Ordenar de A-Z</option>
-						<option value="ZA">Ordenar de Z-A</option>
+						<option value="AZ">Popularidad</option>
 						<option value="01">Ordenar por precio menor</option>
 						<option value="10">Ordenar por precio mayor</option>
 					</select>

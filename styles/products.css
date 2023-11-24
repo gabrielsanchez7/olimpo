@@ -33,6 +33,10 @@
   padding-bottom: 60px;
   overflow: auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .products .categories__item, .experiences .categories__item {
   display: inline-flex;
@@ -44,9 +48,6 @@
   min-width: 100px;
   border-radius: 50%;
   background-color: var(--gray-1);
-}
-.products .categories__item:not(:last-child), .experiences .categories__item:not(:last-child) {
-  margin-right: 10px;
 }
 .products .categories__item i, .experiences .categories__item i {
   font-size: 26px;
@@ -105,10 +106,17 @@
 .products .gallery .gallery__config .gallery__points, .experiences .gallery .gallery__config .gallery__points {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  border: 1px solid var(--gray-2);
+  border-radius: 12px;
+  padding: 10px 18px;
+  max-height: 48px;
+  background-color: white;
 }
 .products .gallery .gallery__config .gallery__points-label, .experiences .gallery .gallery__config .gallery__points-label {
   white-space: nowrap;
+  color: var(--gray-3);
 }
 .products .gallery .gallery__config .searcher, .experiences .gallery .gallery__config .searcher {
   margin-top: 0;
@@ -123,6 +131,9 @@
   }
   .products .gallery .gallery__config .button, .experiences .gallery .gallery__config .button {
     text-align: center;
+    width: 100%;
+  }
+  .products .gallery .gallery__config .gallery__points, .experiences .gallery .gallery__config .gallery__points {
     width: 100%;
   }
 }
