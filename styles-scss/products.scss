@@ -94,22 +94,23 @@
     padding-bottom: 60px;
     overflow: auto;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 
     &__item {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      vertical-align: baseline;
       gap: 4px;
       min-height: 100px;
       min-width: 100px;
       max-width: 100px;
       border-radius: 50%;
       background-color: var(--gray-1);
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
 
       i {
         font-size: 26px;
