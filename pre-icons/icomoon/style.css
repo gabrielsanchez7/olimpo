@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?b42xxa');
+  src:  url('fonts/icomoon.eot?b42xxa#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b42xxa') format('truetype'),
+    url('fonts/icomoon.woff?b42xxa') format('woff'),
+    url('fonts/icomoon.svg?b42xxa#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tag:before {
+  content: "\e925";
+}
+.icon-offer-tag:before {
+  content: "\e920";
+}
+.icon-restau:before {
+  content: "\e921";
+}
+.icon-outd:before {
+  content: "\e922";
+}
+.icon-licor:before {
+  content: "\e923";
+}
+.icon-cuidad:before {
+  content: "\e924";
+}
+.icon-tecno:before {
+  content: "\e91f";
+}
+.icon-icon-offer:before {
+  content: "\e91e";
+}
+.icon-horse:before {
+  content: "\e91b";
+}
+.icon-categories:before {
+  content: "\e91c";
+}
+.icon-experiences:before {
+  content: "\e91d";
+}
+.icon-bag:before {
+  content: "\e914";
+}
+.icon-music:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e907";
+}
+.icon-casino-live:before {
+  content: "\e900";
+}
+.icon-angle-right:before {
+  content: "\e901";
+}
+.icon-ask:before {
+  content: "\e902";
+}
+.icon-back:before {
+  content: "\e903";
+}
+.icon-bank:before {
+  content: "\e905";
+}
+.icon-bet-sport:before {
+  content: "\e906";
+}
+.icon-cart-plus:before {
+  content: "\e908";
+}
+.icon-casino:before {
+  content: "\e909";
+}
+.icon-clock:before {
+  content: "\e90a";
+}
+.icon-close:before {
+  content: "\e90b";
+}
+.icon-done:before {
+  content: "\e90c";
+}
+.icon-electro:before {
+  content: "\e90d";
+}
+.icon-filter:before {
+  content: "\e90e";
+}
+.icon-gift:before {
+  content: "\e90f";
+}
+.icon-help:before {
+  content: "\e910";
+}
+.icon-history:before {
+  content: "\e911";
+}
+.icon-home:before {
+  content: "\e912";
+}
+.icon-house:before {
+  content: "\e913";
+}
+.icon-viajes:before {
+  content: "\e915";
+}
+.icon-plus:before {
+  content: "\e916";
+}
+.icon-depor:before {
+  content: "\e917";
+}
+.icon-stadium:before {
+  content: "\e918";
+}
+.icon-tech:before {
+  content: "\e919";
+}
+.icon-trash:before {
+  content: "\e91a";
+}
