@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('./icomoon.eot?c88a2i');
-  src:  url('./icomoon.eot?c88a2i#iefix') format('embedded-opentype'),
-    url('./icomoon.ttf?c88a2i') format('truetype'),
-    url('./icomoon.woff?c88a2i') format('woff'),
-    url('./icomoon.svg?c88a2i#icomoon') format('svg');
+  src:  url('./icomoon.eot?ervakd');
+  src:  url('./icomoon.eot?ervakd#iefix') format('embedded-opentype'),
+    url('./icomoon.ttf?ervakd') format('truetype'),
+    url('./icomoon.woff?ervakd') format('woff'),
+    url('./icomoon.svg?ervakd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sport-articles-2:before {
+  content: "\e92a";
+}
+.icon-sport-articles:before {
+  content: "\e92b";
+}
+.icon-personal-care:before {
+  content: "\e92c";
+}
+.icon-restaurant:before {
+  content: "\e92d";
+}
+.icon-supermarket:before {
+  content: "\e92e";
+}
+.icon-recargas:before {
+  content: "\e92f";
+}
 .icon-blog:before {
   content: "\e926";
 }
